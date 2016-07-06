@@ -1,2 +1,2 @@
 # lipls
-lipls web aa
+lipls home

@@ -1,0 +1,114 @@
+<div class="modal-header text-center">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	<h4 class="modal-title">예약하기</h4>
+</div>
+<div class="modal-body">
+	<!-- <form name="noti-send-form" method="post" action="qabook_write" enctype="multipart/form-data"> -->
+		<form class="form form-horizontal" method="post" action="reserv_write" accept-charset="UTF-8">
+			<div class='form-group'>
+				<label class='col-md-2 control-label' for='input-text'>제목</label>
+				<div class='col-md-9'>
+					<input class='form-control' name='subj' placeholder='필수' type='text'>
+				</div>
+			</div>
+
+			<div class='form-group'>
+				<label class='col-md-2 control-label' for='input-text'>이름</label>
+				<div class='col-md-9'>
+					<input class='form-control' name='name' placeholder='필수' type='text'>
+				</div>
+			</div>
+
+			<div class='form-group'>
+				<label class='col-md-2 control-label' for='input-text'>연락처</label>
+				<div class='col-md-9'>
+					<input class='form-control' name='phone' placeholder='필수' type='text'>
+				</div>
+			</div>
+
+			<div class='form-group'>
+				<label class='col-md-2 control-label' for='input-text'>예약일</label>
+				<div class="col-md-4">
+					<input type="text" class="form-control input-md" id="tm_start" name="start_date">
+				</div>
+				<div class="col-md-1">
+					~
+				</div>
+				<div class="col-md-4" >
+					<input type="text" class="form-control input-md" id="tm_end" name="end_date">
+				</div>
+
+			</div>
+
+			<div class='form-group'>
+				<label class='col-md-2 control-label' for='input-text'>입금자</label>
+				<div class='col-md-9'>
+					<input class='form-control' name='pay_name' placeholder='필수' type='text'>
+				</div>
+			</div>
+
+			<div class='form-group'>
+				<label class='col-md-2 control-label' for='input-text'>이용인원</label>
+				<div class='col-md-9'>
+					<input class='form-control' name='use_cnt' placeholder='5' type='text'>
+				</div>
+			</div>
+
+			<div class='form-group'>
+				<label class='col-md-2 control-label' for='input-text'>기타</label>
+				<div class='col-md-9'>
+					<input class='form-control' name='shot_desc' placeholder='30분 추가비용은 얼마인가요?' type='text'>
+				</div>
+			</div>
+
+			<div class='form-group'>
+				<label class='col-md-2 control-label' for='input-password'>비밀번호</label>
+				<div class='col-md-9'>
+					<input class='form-control' name='password' placeholder='비밀번호' type='password' value='Top secret!'>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<div class="form-group">
+					<div class="col-md-9 col-md-offset-3">
+						<button type="submit" class="btn btn-primary" value="submit">저장</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Datetimepicker js -->
+<script src="../assets/javascripts/plugins/datetimepicker/moment.min.js"></script>
+<script src="../assets/javascripts/plugins/datetimepicker/bootstrap-datetimepicker.js"></script>
+
+<!-- Datetimepicker css -->
+<link href="../assets/stylesheets/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+<script>
+// regist remove bi modal data when dialog is closed.
+$('.modal').on('hidden.bs.modal', function (e) {
+        $(e.target).removeData('bs.modal')
+                .find(".modal-content").html('');
+})
+$('.modal').on('hide.bs.modal', function (e) {
+        $(e.target).removeData('bs.modal')
+                .find(".modal-content").html('');
+})
+
+$(document).ready(function() {
+        // initialize time-machine datepicker.
+        $('#tm_start').datetimepicker({
+                viewMode: 'days',
+                format: 'YYYY-MM-DD HH',
+                sideBySide: true,
+        });
+	$('#tm_end').datetimepicker({
+                viewMode: 'days',
+                format: 'YYYY-MM-DD HH',
+                sideBySide: true,
+        });
+});
+</script>
