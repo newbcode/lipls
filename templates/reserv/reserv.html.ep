@@ -1,0 +1,66 @@
+% layout 'wrapper', title => '예약하기';      
+
+<div id='main' role='main'>
+	<div id='main-content-header'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<h1 class='title'>
+						예약하기
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='main-content'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffff66&amp;src=rdci4s8u6rh7q9jfrfca03s34k%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=Asia%2FSeoul" style="border-width:0" width="1100" height="430" frameborder="0" scrolling="no"></iframe>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<div class='page-header page-header-with-icon'>
+						<i class='fa fa-table'></i>
+						<h2> 예약하기입니다.  </h2>
+					</div>
+					<div class='row'>
+						<div class='col-sm-12'>
+							<div class='table-responsive'>
+								<table class='table table-bordered'>
+									<thead>
+										<tr class='success'>
+											<th width="5%"> Num </th>
+											<th width="10%"> 이름 </th>
+											<th width="65%"> 제목 </th>
+											<th width="20%"> 작성시간 </th>
+										</tr>
+									</thead>
+									<tbody>
+									<tr class='  '>
+										<td> 1 </td>
+										<td> 홍길동 </td>
+										<td> 2016071017~2016071020 예약 </td>
+										<td> 2016071016</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="btn-group btn-small pull-right">
+								<a href="#reserv_write" id="modal_btn" role="button" data-remote="reserv_write" data-target="#reserv_write" class="btn btn-default btn-small" data-toggle="modal">예약</a>
+								<!-- Modal -->
+								<div class="modal fade board" id="reserv_write" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-mg">
+										<div class="modal-content board-content"></div>
+									</div><!-- /.modal-dialog -->
+								</div><!-- /.modal -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
