@@ -1,0 +1,51 @@
+<div class="table-responsive">
+	<table class="table table-bordered table-hover table-striped">
+		<tbody>
+		<table class="table table-bordered table-striped">
+			<tbody>
+			% use Encode;
+			% my $id;
+			% foreach my $item ( @{$read} ) {
+			% my $name = decode('utf8', $item->{name});
+			% my $subject = decode('utf8', $item->{subject});
+			% my $pay_name = decode('utf8', $item->{pay_name});
+			% my $shot_desc = decode('utf8', $item->{shot_desc});
+			% $id = $item->{id};
+			<tr>
+				<td><strong>제목</strong></td>
+				<td><%= $subject %></td>
+			</tr>
+			<tr>
+				<td><strong>이름</strong></td>
+				<td><%= $name %></td>
+			</tr>
+			<tr>
+				<td><strong>연락처</strong></td>
+				<td><%= $item->{phone} %></td>
+			</tr>
+			<tr>
+				<td><strong>예약일</strong></td>
+				<td>[<%= $item->{start_date} %>]시  ~  [<%= $item->{end_date} %>]시</td>
+			</tr>
+			<tr>
+				<td><strong>입금자</strong></td>
+				<td><%= $pay_name %></td>
+			</tr>
+			<tr>
+				<td><strong>이용인원</strong></td>
+				<td><%= $item->{use_cnt} %></td>
+			</tr>
+			<tr>
+				<td><strong>기타</strong></td>
+				<td><%= $shot_desc %></td>
+			</tr>
+			%}
+			</tbody>
+		</table>
+	</div>
+</div>
+<div align="right">
+	<a href="/reserv_del?id=<%= $id %>" id="deleteBtn" class="btn btn-danger btn-xs btn-pull-right" role="button">삭제</a>
+	<!-- <a href="#" id="deleteBtn" class="btn btn-success btn-xs btn-pull-right" role="button">수정</a> -->
+	<button type="button" class="btn btn-primary btn-xs btn-pull-right" data-dismiss="modal">확인</button>
+<div>

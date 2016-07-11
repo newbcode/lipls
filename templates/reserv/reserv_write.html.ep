@@ -30,13 +30,13 @@
 			<div class='form-group'>
 				<label class='col-md-2 control-label' for='input-text'>예약일</label>
 				<div class="col-md-4">
-					<input type="text" class="form-control input-md" id="tm_start" name="start_date">
+					<input type="text" class="form-control input-md" id="tm_start">
 				</div>
 				<div class="col-md-1">
 					~
 				</div>
 				<div class="col-md-4" >
-					<input type="text" class="form-control input-md" id="tm_end" name="end_date">
+					<input type="text" class="form-control input-md" id="tm_end">
 				</div>
 
 			</div>
@@ -81,8 +81,6 @@
 	</div>
 </div>
 
-<!-- lipls js  -->
-<script src="../lipls_app/board.js"></script>
 
 <!-- Datetimepicker js -->
 <script src="../assets/javascripts/plugins/datetimepicker/moment.min.js"></script>
@@ -90,3 +88,20 @@
 
 <!-- Datetimepicker css -->
 <link href="../assets/stylesheets/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+<!-- lipls js  -->
+<script src="../lipls_app/board.js"></script>
+
+<script>
+        $('#tm_start').datetimepicker({
+                viewMode: 'days',
+                format: 'YYYY-MM-DD HH',
+                sideBySide: true,
+        });
+        $('#tm_end').datetimepicker({
+                viewMode: 'days',
+                format: 'YYYY-MM-DD HH',
+                sideBySide: true,
+        });
+</script>
+

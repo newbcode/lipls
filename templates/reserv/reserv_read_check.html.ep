@@ -1,0 +1,21 @@
+<div class="modal-body">
+	<!-- <form name="noti-send-form" method="post" action="qabook_write" enctype="multipart/form-data"> -->
+	<div class="row">
+		<div class="password">
+			<form class="form form-horizontal" accept-charset="UTF-8">
+				<div class='form-group'>
+					<div class='col-md-3 col-md-offset-4' align="center" >
+						<input class='form-control input-md' id='pw' placeholder='비밀번호' type='password'>
+						<input type="hidden" id='id' value="<%= $id %>">
+					</div>
+					<button id="reserv_read_check_btn" type="button" class="btn btn-primary btn-md" value="submit">확인</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="reserv_read_table"></div> 
+</div>
+
+<!-- lipls js  -->
+<script src="../lipls_app/board.js"></script>
