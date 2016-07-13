@@ -12,10 +12,28 @@ use ReservDB;
 # Documentation browser under "/perldoc"
 plugin 'PODRenderer';
 
+my $config = plugin 'Config';
+
 get '/' => sub {
 	my $c = shift;
 
-} => 'coming_soon';
+#} => 'coming_soon';
+} => 'index';
+
+get '/about_us' => sub {
+	my $c = shift;
+
+};
+
+get '/services' => sub {
+	my $c = shift;
+
+};
+
+get '/portfolio' => sub {
+	my $c = shift;
+
+} => 'portfol';
 
 get '/reserv' => sub {
 	my $c = shift;
@@ -24,6 +42,11 @@ get '/reserv' => sub {
 	$c->stash( list => \@r );
 
 } => '/reserv/reserv';
+
+get '/contact' => sub {
+	my $c = shift;
+
+} => '/contact/contact';
 
 get '/reserv_info' => sub {
 	my $c = shift;

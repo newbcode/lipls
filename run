@@ -1,3 +1,24 @@
 #!/bin/sh
 
-starman --port=5000 --workers=5 lipls.pl
+ARGC=$#
+ACTION=$1;
+COMMAND="sudo ./hypnotoad";
+APP='./lipls.pl';
+
+if [ $ARGC -ne 1 ]
+then
+        echo "$0 [ start | stop ]" ;
+        exit;
+fi
+
+if [ $ACTION == 'start' ]
+then
+        $COMMAND $APP;
+elif [ $ACTION == 'stop' ]
+then
+        $COMMAND -s $APP;
+else
+        echo "$0 [ start | stop ]" ;
+fi
+
+exit;

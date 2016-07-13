@@ -1,0 +1,81 @@
+% layout 'wrapper', title => 'ABOUT LIPLS';
+
+<div id='main' role='main'>
+	<div id='main-content-header'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<h1 class='title'>
+						About LIPLS
+						<small>'Lipls'는 'Little Prince's Box'의 줄임말로 소설 속 어린왕자에 나오는 작은 상자를 뜻합니다.
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='main-content'>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<div class='page-header page-header-with-icon no-mg-t'>
+							<i class='fa fa-tag'></i>
+							<h2>
+								Little Prince's Box
+							</h2>
+						</div>
+						<div class='row'>
+							<div class='col-sm-12'>
+								<p class='lead lead-xs text-center'>양을 그려달라는 어린왕자의 부탁에 양 대신 구멍뚫린 작은 상자 하나를 그려주는 조종사.</p><p class='lead lead-xs text-center'> 어린왕자는 그 상자를 통해 그 어떤 틀에도 얽매이지않은, 오직 어린왕자가 꿈꾸었던 자신만의 양을 갖게됩니다.</p><p class='lead lead-xs text-center'> 우리 'LIPLS'도 바로 그 상자를 만들어간다는 생각으로 어디에도 없는, 바로 우리가 상상하던 그것을 찾고자 노력하고 있습니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<div class='page-header page-header-with-icon'>
+							<i class='fa fa-leaf'></i>
+							<h2>
+								LIPLS IS
+							</h2>
+						</div>
+						<div class='row panels'>
+							<div class='col-sm-4 panel-item'>
+								<a class='panel panel-circle-contrast' href='#'>
+									<div class='panel-icon'>
+										<i class='fa fa-user icon'></i>
+									</div>
+									<div class='panel-body text-center'>
+										<h3 class='panel-title'>고객에게</h3>
+										<p>최선을 다하고 끊임없는 소통을 통한 최고의 결과물을 만들기 위해 노력합니다.</p>
+									</div>
+								</a>
+							</div>
+							<div class='col-sm-4 panel-item'>
+								<a class='panel panel-circle-contrast' href='#'>
+									<div class='panel-icon'>
+										<i class='fa fa-clock-o icon'></i>
+									</div>
+									<div class='panel-body text-center'>
+										<h3 class='panel-title'>시간의</h3>
+										<p>소중함을 알며 작업시에도 철저한 시관관념을 갖고 임하여 고객과의 약속을 지킵니다</p>
+									</div>
+								</a>
+							</div>
+							<div class='col-sm-4 panel-item'>
+								<a class='panel panel-circle-contrast' href='#'>
+									<div class='panel-icon'>
+										<i class='fa fa-send icon'></i>
+									</div>
+									<div class='panel-body text-center'>
+										<h3 class='panel-title'>결과와</h3>
+										<p>과정 모두를 우선시하여 진행되는 과정속에서도 만족스러움을 찾을 수 있도록 합니다.</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

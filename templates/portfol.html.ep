@@ -1,0 +1,122 @@
+% layout 'wrapper', title => 'Portfolio';
+
+<div id='main' role='main'>
+	<div id='main-content-header'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<h1 class='title'>
+						Portfolio
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='main-content'>
+		<div class='container'>
+			<div class='row' id='portfolio-filter'>
+				<div class='col-sm-12'>
+					<ul class='nav nav-pills'>
+						<li class='active'><a data-filter="*" href="#">All</a></li>
+						<li><a data-filter=".portfolio-filter-original" href="#">Original</a></li>
+						<li><a data-filter=".portfolio-filter-prad" href="#">PR/AD</a></li>
+						<li><a data-filter=".portfolio-filter-mcn " href="#">MCN</a></li>
+						<li><a data-filter=".portfolio-filter-cg" href="#">CG</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class='row portfolio-boxes' id='portfolio-container'>
+				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
+					<a href='portfolio_detail.html'>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/young.jpeg" />
+						</div>
+						<h3 class='title'>청춘, 지금</h3>
+						<p class='category'>Original</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-mcn portfolio-item'>
+					<a href='portfolio_detail.html'>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Malesuada" width="360" height="235" src="http://placehold.it/360x235" />
+						</div>
+						<h3 class='title'>Malesuada</h3>
+						<p class='category'>MCN</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+					<a href='portfolio_detail.html'>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Dictum vulputate" width="360" height="235" src="http://placehold.it/360x235" />
+						</div>
+						<h3 class='title'>Dictum vulputate</h3>
+						<p class='category'>PR/AD</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-cg portfolio-item'>
+					<a href='portfolio_detail.html'>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Semper massa" width="360" height="235" src="http://placehold.it/360x235" />
+						</div>
+						<h3 class='title'>Semper massa</h3>
+						<p class='category'>CG</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-filter-mcn portfolio-item'>
+					<a href='portfolio_detail.html'>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Lorem ipsum" width="360" height="235" src="http://placehold.it/360x235" />
+						</div>
+						<h3 class='title'>Lorem ipsum</h3>
+						<p class='category'>Original, MCN</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+					<a href='portfolio_detail.html'>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Pellentesque" width="360" height="235" src="http://placehold.it/360x235" />
+						</div>
+						<h3 class='title'>Pellentesque</h3>
+						<p class='category'>PR/AD</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-mcn portfolio-item'>
+					<a href='portfolio_detail.html'>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Malesuada" width="360" height="235" src="http://placehold.it/360x235" />
+						</div>
+						<h3 class='title'>Malesuada</h3>
+						<p class='category'>MCN</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-cg portfolio-item'>
+					<a href='portfolio_detail.html'>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Cullamcorper" width="360" height="235" src="http://placehold.it/360x235" />
+						</div>
+						<h3 class='title'>Cullamcorper</h3>
+						<p class='category'>CG</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-filter-cg portfolio-item'>
+					<a href='portfolio_detail.html'>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Etiam posuere" width="360" height="235" src="http://placehold.it/360x235" />
+						</div>
+						<h3 class='title'>Etiam posuere</h3>
+						<p class='category'>PR/AD, CG</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

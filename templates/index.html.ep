@@ -1,4 +1,4 @@
-% layout 'wrapper', title => 'MAIN';      
+% layout 'wrapper', title => 'LIPLS';      
 
 <div id='main' role='main'>
 	<!-- / carousel blur -->
@@ -9,11 +9,9 @@
 				<div class='row'>
 					<div class='col-lg-12 animate'>
 						<h1 class='big fadeInUp animated'>
-							Fully responsive
-							&amp;
-							Retina ready
+							Support for your Dream!
 						</h1>
-						<p class='normal fadeInUp animated'>Proin facilisis aliquam nunc quis varius.</p>
+						<p class='normal fadeInUp animated'>영상제작에 꿈을 갖고 있는 크레이터들을 지원합니다!</p>
 						<a class='btn btn-contrast btn-lg fadeInRight animated' href='#'>
 							Show more
 						</a>
@@ -26,11 +24,9 @@
 				<div class='row'>
 					<div class='col-lg-12 animate'>
 						<h2 class='big fadeInLeftBig animated'>
-							Clean, flat
-							&amp;
-							polished design
+							Creative Contents
 						</h2>
-						<p class='normal fadeInRightBig animated'>Sed felis ligula, eleifend at neque eget.</p>
+						<p class='normal fadeInRightBig animated'>기획부터 촬영까지 제작 전반에 걸쳐 하이퀄리티 영상을 제공합니다.</p>
 						<a class='btn btn-contrast btn-lg fadeInDownBig animated' href='#'>
 							Show more
 						</a>
@@ -42,8 +38,8 @@
 			<div class='container'>
 				<div class='row'>
 					<div class='col-lg-12 animate'>
-						<h2 class='big fadeInRightBig animated'>Based on Twitter Bootstrap</h2>
-						<p class='normal fadeInLeftBig animated'>Nam nec tellus molestie, sollicitudin, at...</p>
+						<h2 class='big fadeInRightBig animated'>Studio Rental</h2>
+						<p class='normal fadeInLeftBig animated'>촬영 및 소규모 공연, 상영등을 위한 장소를 제공합니다.</p>
 						<a class='btn btn-contrast btn-lg fadeInUpBig animated' href='#'>
 							Show more
 						</a>
@@ -57,71 +53,49 @@
 		<div class='container'>
 			<div class='row'>
 				<div class='col-sm-12'>
-					<p class='lead lead-lg text-center'>Quisque nunc sapien, malesuada vitae luctus in, blandit eu erat. Cras fringilla eros eget justo dictum convallis.</p>
-				</div>
-			</div>
-			<div class='panels-wrapper'>
-				<div class='row panels'>
-					<div class='col-sm-4 panel-item'>
-						<a class='panel panel-image' href='#'>
-							<div class='panel-icon'>
-								<i class='fa fa-clock-o icon'></i>
-							</div>
-							<div class='panel-heading'><img class="img-responsive-sm" alt="Project planning" width="768" height="300" src="http://placehold.it/768x300" /></div>
-							<div class='panel-body'>
-								<h3 class='panel-title'>Project planning</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu pharetra felis.est.</p>
-							</div>
-						</a>
+					<div class='page-header page-header-with-icon no-mg-t'>
+						<i class='fa fa-briefcase'></i>
+						<h2>
+							Top services
+						</h2>
 					</div>
-					<div class='col-sm-4 panel-item'>
-						<a class='panel panel-image' href='#'>
-							<div class='panel-icon'>
-								<i class='fa fa-cog icon'></i>
+					<div class='panels-wrapper'>
+						<div class='row panels'>
+							<div class='col-sm-4 panel-item'>
+								<a class='panel panel-image' href='#'>
+									<div class='panel-icon'>
+										<i class='fa fa-video-camera icon'></i>
+									</div>
+									<div class='panel-heading'><img class="img-responsive-sm" alt="Project planning" width="768" height="300" src="../assets/images/camera.jpeg" /></div>
+									<div class='panel-body'>
+										<h3 class='panel-title'>영상제작</h3>
+										<p>기업홍보, 제품PR등 다양한 홍보영상과 감성적인 필름을 만듭니다.</p>
+									</div>
+								</a>
 							</div>
-							<div class='panel-heading'><img class="img-responsive-sm" alt="Easy customizable" width="768" height="300" src="http://placehold.it/768x300" /></div>
-							<div class='panel-body'>
-								<h3 class='panel-title'>Easy customizable</h3>
-								<p>Etiam init rutrum ligula semper neque relu dapibus, non tempus mauris sodales.est.</p>
+							<div class='col-sm-4 panel-item'>
+								<a class='panel panel-image' href='#'>
+									<div class='panel-icon'>
+										<i class='fa fa-cube icon'></i>
+									</div>
+									<div class='panel-heading'><img class="img-responsive-sm" alt="Easy customizable" width="768" height="300" src="../assets/images/renz.jpeg" /></div>
+									<div class='panel-body'>
+										<h3 class='panel-title'>스튜디오</h3>
+										<p>호리존 스튜디오 및 장비대여와 촬영대행,후보정등 촬영에 대한 전반적인 작업을 합니다.</p>
+									</div>
+								</a>
 							</div>
-						</a>
-					</div>
-					<div class='col-sm-4 panel-item'>
-						<a class='panel panel-image' href='#'>
-							<div class='panel-icon'>
-								<i class='fa fa-rocket icon'></i>
-							</div>
-							<div class='panel-heading'><img class="img-responsive-sm" alt="Fastest workers" width="768" height="300" src="http://placehold.it/768x300" /></div>
-							<div class='panel-body'>
-								<h3 class='panel-title'>Fastest workers</h3>
-								<p>Pellentesque id neque sit amet nibh placerat suscipit et a purus, mauris id.</p>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class='row'>
-				<div class='col-sm-12'>
-					<div class='page-header page-header-with-icon'>
-						<i class='fa fa-star'></i>
-						<h2>Top features</h2>
-					</div>
-					<div class='text-boxes'>
-						<div class='row text-box'>
-							<div class='col-sm-6'><img class="img-responsive center-block" alt="Lorem ipsum dolor sit amet" width="340" height="188" src="http://placehold.it/340x188" /></div>
-							<div class='col-sm-6'>
-								<h3 class='title'><a href="#">Lorem ipsum dolor sit amet</a></h3>
-								<p>Mauris at ultricies eros. Morbi vel dui nec arcu suscipit euismod. Phasellus pellentesque lectus eget quam ullamcorper consectetur. Vestibulum vitae risus a erat mollis lac in venenatis tellus. Morbi et tristique lacus.</p>
-								<a class='btn btn-contrast btn-bordered btn-sm' href='#'>Read more</a>
-							</div>
-						</div>
-						<hr>
-						<div class='row text-box'>
-							<div class='col-sm-6 col-sm-push-6'><img class="img-responsive center-block" alt="Praesent vitae adipiscing nunc" width="330" height="183" src="http://placehold.it/330x183" /></div>
-							<div class='col-sm-6 col-sm-pull-6'>
-								<h3 class='title'><a href="#">Praesent vitae adipiscing nunc</a></h3>
-								<p>Integer fringtilla fringilla mauris eget accumsan. Nullam quis consequat ipsum, eu cursus mi. Donec quis quam at risus viverra venenatis. Phasellus non nulla tortor. Fusce congue enim sed ullamcorper cursus. Donec tincidunt elit sed felis iaculis laoreet.</p>
-								<a class='btn btn-contrast btn-bordered btn-sm' href='#'>Read more</a>
+							<div class='col-sm-4 panel-item'>
+								<a class='panel panel-image' href='#'>
+									<div class='panel-icon'>
+										<i class='fa fa-film icon'></i>
+									</div>
+									<div class='panel-heading'><img class="img-responsive-sm" alt="Fastest workers" width="768" height="300" src="../assets/images/shoter.jpeg" /></div>
+									<div class='panel-body'>
+										<h3 class='panel-title'>퍼니필름</h3>
+										<p>세상에 없던 필름, 재미있는 스낵영상과 자유로운 UCC크리에이터들과 함께합니다.</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -132,117 +106,50 @@
 					<div class='page-header page-header-with-icon'>
 						<i class='fa fa-suitcase'></i>
 						<h2>
-							Our last projects
-							<small>Phasellus malesuada sapien non orci semper gravida.</small>
+							Last Projects
 						</h2>
 					</div>
 					<div class='row portfolio-boxes'>
 						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-							<a class='image-link' href='portfolio_detail.html'>
+							<a class='image-link' href='#'>
 								<i class='fa fa-search'></i>
-								<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="262" height="262" src="http://placehold.it/262x262" />
+								<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="262" height="262" src="assets/images/portfolio/chevrolet.jpeg">
 							</a>
-							<h3 class='title'>Etiam vestibulum</h3>
-							<p class='category'>Photography</p>
+							<h3 class='title'>Chevrolet</h3>
+							<p class='category'>쉐보레 말리부 런칭행사 인터뷰 & oap</p>
 						</div>
 						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-							<a class='image-link' href='portfolio_detail.html'>
+							<a class='image-link' href='#'>
 								<i class='fa fa-link'></i>
-								<img class="img-responsive img-rounded center-block" alt="Malesuada" width="262" height="262" src="http://placehold.it/262x262" />
+								<img class="img-responsive img-rounded center-block" alt="Malesuada" width="262" height="262" src="assets/images/portfolio/prugio.jpeg" />
 							</a>
-							<h3 class='title'>Malesuada</h3>
-							<p class='category'>Webdesign</p>
+							<h3 class='title'>PRUGIO</h3>
+							<p class='category'>용산 푸르지오 모델하우스 상영 영상</p>
 						</div>
 						<div class='col-sm-3 col-xs-6 portfolio-box'>
-							<a href='portfolio_detail.html'>
+							<a href='#'>
 								<div class='image-link'>
 									<i class='fa fa-search'></i>
-									<img class="img-responsive img-rounded center-block" alt="Dictum vulputate" width="262" height="262" src="http://placehold.it/262x262" />
+									<img class="img-responsive img-rounded center-block" alt="Dictum vulputate" width="262" height="262" src="assets/images/portfolio/warawara.jpeg" />
 								</div>
-								<h3 class='title'>Dictum vulputate</h3>
-								<p class='category'>Identity</p>
+								<h3 class='title'>WARA</h3>
+								<p class='category'>와라와라 사내 매뉴얼 영상</p>
 							</a>
 						</div>
 						<div class='col-sm-3 col-xs-6 portfolio-box'>
-							<a href='portfolio_detail.html'>
+							<a href='#'>
 								<div class='image-link'>
 									<i class='fa fa-search'></i>
-									<img class="img-responsive img-rounded center-block" alt="Semper massa" width="262" height="262" src="http://placehold.it/262x262" />
+									<img class="img-responsive img-rounded center-block" alt="Semper massa" width="262" height="262" src="assets/images/portfolio/gadanis.jpeg" />
 								</div>
-								<h3 class='title'>Semper massa</h3>
-								<p class='category'>Marketing</p>
+								<h3 class='title'>Godinus</h3>
+								<p class='category'>온라인 게임 가디너스 메이킹 & 인터뷰
+								</p>
 							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class='row'>
-				<div class='col-sm-12'>
-					<div class='page-header page-header-with-icon'>
-						<i class='fa fa-quote-right'></i>
-						<h2>Testimonials</h2>
-					</div>
-					<div class='row quotes'>
-						<div class='carousel carousel-default slide carousel-auto' id='carousel-testimonials'>
-							<div class='carousel-inner'>
-								<div class='item active quote'>
-									<div class='col-sm-12 text-center'>
-										<p class='lead'>Mauris at ultricies eros. Morbi vel dui nec arcu suscipit euismod. Phasellus pellentesque lectus eget quam ullamcorper consectetur. Vestibulum vitae risus a erat mollis lac in venenatis tellus.</p>
-										<div class='author-wrapper'>
-											<p class='author'>
-											<strong>John Doe</strong>,
-											Company name
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class='item quote'>
-									<div class='col-sm-12 text-center'>
-										<p class='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan leo tellus. Nulla fringilla elementum nisl, vitae faucibus risus. Donec ut tristique eros. Curabitur mattis auctor turpis.</p>
-										<div class='author-wrapper'>
-											<p class='author'>
-											<strong>Michal Marek</strong>,
-											Bublina Studio
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class='item quote'>
-									<div class='col-sm-12 text-center'>
-										<p class='lead'>Aenean lorem quam, dapibus et enim vel, ultrices tincidunt tellus. Donec mattis massa et lacus interdum lobortis. Pellentesque habitant morbi tristique senectus. Curabitur mattis auctor turpis.</p>
-										<div class='author-wrapper'>
-											<p class='author'>
-											<strong>Paľo Delinčák</strong>,
-											Bublina Studio
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class='item quote'>
-									<div class='col-sm-12 text-center'>
-										<p class='lead'>Integer quis placerat leo, sit amet varius odio. Fusce sollicitudin metus eu eros egestas cursus ut ullamcorper augue. Integer blandit tellus a urna semper, sit amet tempor orci ornare. Mauris nec.</p>
-										<div class='author-wrapper'>
-											<p class='author'>
-											<strong>Jane Doe</strong>,
-											Company name
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<ol class='carousel-indicators'>
-								<li class='active' data-slide-to='0' data-target='#carousel-testimonials'></li>
-								<li data-slide-to='1' data-target='#carousel-testimonials'></li>
-								<li data-slide-to='2' data-target='#carousel-testimonials'></li>
-								<li data-slide-to='3' data-target='#carousel-testimonials'></li>
-							</ol>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class='fade' id='scroll-to-top'>
-		<i class='fa fa-chevron-up'></i>
 	</div>
 </div>

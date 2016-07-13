@@ -1,0 +1,192 @@
+% layout 'wrapper', title => 'Services';
+
+<div id='main' role='main'>
+	<div id='main-content-header'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<h1 class='title'>
+						Business
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='main-content'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<div class='page-header page-header-with-icon no-mg-t'>
+						<i class='fa fa-briefcase'></i>
+						<h2>
+							Top services
+						</h2>
+					</div>
+					<div class='panels-wrapper'>
+						<div class='row panels'>
+							<div class='col-sm-4 panel-item'>
+								<a class='panel panel-image' href='#'>
+									<div class='panel-icon'>
+										<i class='fa fa-video-camera icon'></i>
+									</div>
+									<div class='panel-heading'><img class="img-responsive-sm" alt="Project planning" width="768" height="300" src="../assets/images/camera.jpeg" /></div>
+									<div class='panel-body'>
+										<h3 class='panel-title'>영상제작</h3>
+										<p>기업홍보, 제품PR등 다양한 홍보영상과 감성적인 필름을 만듭니다.</p>
+									</div>
+								</a>
+							</div>
+							<div class='col-sm-4 panel-item'>
+								<a class='panel panel-image' href='#'>
+									<div class='panel-icon'>
+										<i class='fa fa-cube icon'></i>
+									</div>
+									<div class='panel-heading'><img class="img-responsive-sm" alt="Easy customizable" width="768" height="300" src="../assets/images/renz.jpeg" /></div>
+									<div class='panel-body'>
+										<h3 class='panel-title'>스튜디오</h3>
+										<p>호리존 스튜디오 및 장비대여와 촬영대행,후보정등 촬영에 대한 전반적인 작업을 합니다.</p>
+									</div>
+								</a>
+							</div>
+							<div class='col-sm-4 panel-item'>
+								<a class='panel panel-image' href='#'>
+									<div class='panel-icon'>
+										<i class='fa fa-film icon'></i>
+									</div>
+									<div class='panel-heading'><img class="img-responsive-sm" alt="Fastest workers" width="768" height="300" src="../assets/images/shoter.jpeg" /></div>
+									<div class='panel-body'>
+										<h3 class='panel-title'>퍼니필름</h3>
+										<p>세상에 없던 필름, 재미있는 스낵영상과 자유로운 UCC크리에이터들과 함께합니다.</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<div class='page-header page-header-with-icon'>
+						<i class='fa fa-cloud'></i>
+						<h2>
+							Services Detail
+						</h2>
+					</div>
+					<div class='icon-boxes icon-boxes-lg'>
+						<div class='row'>
+							<div class='col-sm-6 icon-box'>
+								<div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
+									<i class='fa fa-video-camera text-white'></i>
+								</div>
+								<div class='content'>
+									<h3 class='title'>영상제작</h3>
+									<p>기획부터 좔여까지 제작 전반에 걸친 고퀄리티의 영상을 제공합니다.</p>
+								</div>
+							</div>
+							<div class='col-sm-6 icon-box'>
+								<div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
+									<i class='fa fa-camera-retro text-white'></i>
+								</div>
+								<div class='content'>
+									<h3 class='title'>프로필 촬영</h3>
+									<p>개인용 프로필, 단체 프로필 촬영 및 인물사진을 촬영합니다.</p>
+								</div>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='col-sm-6 icon-box'>
+								<div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
+									<i class='fa fa-users text-white'></i>
+								</div>
+								<div class='content'>
+									<h3 class='title'>스튜디오 대관</h3>
+									<p>촬영 및 소규모 공연, 상영등을 위한 장소를 제공합니다.</p>
+								</div>
+							</div>
+							<div class='col-sm-6 icon-box'>
+								<div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
+									<i class='fa fa-camera text-white'></i>
+								</div>
+								<div class='content'>
+									<h3 class='title'>제품촬영</h3>
+									<p>쇼핑몰, 기업신제품, 판촉물등의 상세 사진을 촬영합니다.</p>
+								</div>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='col-sm-6 icon-box'>
+								<div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
+									<i class='fa fa-wrench text-white'></i>
+								</div>
+								<div class='content'>
+									<h3 class='title'>장비대여</h3>
+									<p>빔프로젝터, 스모그머신외 촬영장비를 대여합니다.</p>
+								</div>
+							</div>
+							<div class='col-sm-6 icon-box'>
+								<div class='icon icon-wrap icon-circle icon-lg contrast-bg'>
+									<i class='fa fa-save text-white'></i>
+								</div>
+								<div class='content'>
+									<h3 class='title'>리터칭</h3>
+									<p>인물사진 및 제품사진, 영상을 리터칭 합니다.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<div class='page-header page-header-with-icon'>
+						<i class='fa fa-refresh'></i>
+						<h2>
+							LIPLS PROCESS
+						</h2>
+					</div>
+					<div class='row'>
+						<div class='col-sm-12'>
+							<ul class='circle-stats'>
+								<li class='circle-stat-small'>
+								<div class='circle-stat-wrapper'>
+									<input class='hidden' data-fgColor='#8dc153' data-readOnly='true' data-stat='circle' data-thickness='0.1' type='text' value='25'>
+									<p class='percent'>1</p>
+								</div>
+								<h3 class='title'>제작요청</h3>
+								<p class='description'>클라이언트와의 상담을 통해 필요한 영상의 방향을 제공하고 합리적인 비용과 과정을 제시해 드립니다.</p>
+								</li>
+								<li class='circle-stat-small'>
+								<div class='circle-stat-wrapper'>
+									<input class='hidden' data-fgColor='#8dc153' data-readOnly='true' data-stat='circle' data-thickness='0.1' type='text' value='50'>
+									<p class='percent'>2</p>
+								</div>
+								<h3 class='title'>기획회의</h3>
+								<p class='description'>오프라인 미팅을 통해 제작에 필요한 자룔르 수집 영상의 구성/기획안을 제공해 드립니다.</p>
+								</li>
+								<li class='circle-stat-small'>
+								<div class='circle-stat-wrapper'>
+									<input class='hidden' data-fgColor='#8dc153' data-readOnly='true' data-stat='circle' data-thickness='0.1' type='text' value='75'>
+									<p class='percent'>3</p>
+								</div>
+								<h3 class='title'>제작</h3>
+								<p class='description'>철저한 기획과 스케쥴을 바탕으로 전문 스탭들이 설계하고 진행하여 수준 높은 촬영환경을 만들어갑니다.</p>
+								</li>
+								<li class='circle-stat-small'>
+								<div class='circle-stat-wrapper'>
+									<input class='hidden' data-fgColor='#8dc153' data-readOnly='true' data-stat='circle' data-thickness='0.1' type='text' value='100'>
+									<p class='percent'>4</p>
+								</div>
+								<h3 class='title'>최종납품</h3>
+								<p class='description'>완성본을 시사하고 수정요청을 받아 후반 수정작업 후, 고객이 원하는 방식으로 납품하여 최종 완료합니다.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='fade' id='scroll-to-top'>
+		<i class='fa fa-chevron-up'></i>
+	</div>
+</div>
