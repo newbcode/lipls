@@ -8,26 +8,11 @@
 			<div class='container'>
 				<div class='row'>
 					<div class='col-lg-12 animate'>
-						<h1 class='big fadeInUp animated'>
-							Support for your Dream!
-						</h1>
-						<p class='normal fadeInUp animated'>영상제작에 꿈을 갖고 있는 크레이터들을 지원합니다!</p>
-						<a class='btn btn-contrast btn-lg fadeInRight animated' href='#'>
-							Show more
-						</a>
-					</div>
-				</div>
-			</div>
-			</li>
-			<li class='item'>
-			<div class='container'>
-				<div class='row'>
-					<div class='col-lg-12 animate'>
 						<h2 class='big fadeInLeftBig animated'>
 							Creative Contents
 						</h2>
 						<p class='normal fadeInRightBig animated'>기획부터 촬영까지 제작 전반에 걸쳐 하이퀄리티 영상을 제공합니다.</p>
-						<a class='btn btn-contrast btn-lg fadeInDownBig animated' href='#'>
+						<a class='btn btn-contrast btn-lg fadeInDownBig animated' href='/portfolio'>
 							Show more
 						</a>
 					</div>
@@ -40,7 +25,7 @@
 					<div class='col-lg-12 animate'>
 						<h2 class='big fadeInRightBig animated'>Studio Rental</h2>
 						<p class='normal fadeInLeftBig animated'>촬영 및 소규모 공연, 상영등을 위한 장소를 제공합니다.</p>
-						<a class='btn btn-contrast btn-lg fadeInUpBig animated' href='#'>
+						<a class='btn btn-contrast btn-lg fadeInUpBig animated' href='/studio'>
 							Show more
 						</a>
 					</div>
@@ -62,7 +47,7 @@
 					<div class='panels-wrapper'>
 						<div class='row panels'>
 							<div class='col-sm-4 panel-item'>
-								<a class='panel panel-image' href='#'>
+								<a class='panel panel-image' href='/portfolio'>
 									<div class='panel-icon'>
 										<i class='fa fa-video-camera icon'></i>
 									</div>
@@ -74,14 +59,14 @@
 								</a>
 							</div>
 							<div class='col-sm-4 panel-item'>
-								<a class='panel panel-image' href='#'>
+								<a class='panel panel-image' href='/studio'>
 									<div class='panel-icon'>
 										<i class='fa fa-cube icon'></i>
 									</div>
 									<div class='panel-heading'><img class="img-responsive-sm" alt="Easy customizable" width="768" height="300" src="../assets/images/renz.jpeg" /></div>
 									<div class='panel-body'>
 										<h3 class='panel-title'>스튜디오</h3>
-										<p>호리존 스튜디오 및 장비대여와 촬영대행,후보정등 촬영에 대한 전반적인 작업을 합니다.</p>
+										<p>호리존 스튜디오 및 장비대여와 촬영대행, 후보정등 촬영에 대한 전반적인 작업을 합니다.</p>
 									</div>
 								</a>
 							</div>
@@ -111,23 +96,27 @@
 					</div>
 					<div class='row portfolio-boxes'>
 						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-							<a class='image-link' href='#'>
-								<i class='fa fa-search'></i>
-								<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="262" height="262" src="assets/images/portfolio/chevrolet.jpeg">
+							<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/ZKxsfBbm5vA";>
+								<div class='image-link'>
+									<i class='fa fa-search'></i>
+									<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="262" height="262" src="assets/images/portfolio/chevrolet.jpeg">
+								</div>
 							</a>
 							<h3 class='title'>Chevrolet</h3>
 							<p class='category'>쉐보레 말리부 런칭행사 인터뷰 & oap</p>
 						</div>
 						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-							<a class='image-link' href='#'>
-								<i class='fa fa-link'></i>
-								<img class="img-responsive img-rounded center-block" alt="Malesuada" width="262" height="262" src="assets/images/portfolio/prugio.jpeg" />
+							<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/enaOHgyjbC8";>
+								<div class='image-link'>
+									<i class='fa fa-search'></i>
+									<img class="img-responsive img-rounded center-block" alt="Malesuada" width="262" height="262" src="assets/images/portfolio/prugio.jpeg" />
+								</div>
 							</a>
 							<h3 class='title'>PRUGIO</h3>
 							<p class='category'>용산 푸르지오 모델하우스 상영 영상</p>
 						</div>
-						<div class='col-sm-3 col-xs-6 portfolio-box'>
-							<a href='#'>
+						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
+							<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/bIj8XSf3o2c";>
 								<div class='image-link'>
 									<i class='fa fa-search'></i>
 									<img class="img-responsive img-rounded center-block" alt="Dictum vulputate" width="262" height="262" src="assets/images/portfolio/warawara.jpeg" />
@@ -136,8 +125,8 @@
 								<p class='category'>와라와라 사내 매뉴얼 영상</p>
 							</a>
 						</div>
-						<div class='col-sm-3 col-xs-6 portfolio-box'>
-							<a href='#'>
+						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
+							<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/2t0-N4NBdwA";>
 								<div class='image-link'>
 									<i class='fa fa-search'></i>
 									<img class="img-responsive img-rounded center-block" alt="Semper massa" width="262" height="262" src="assets/images/portfolio/gadanis.jpeg" />

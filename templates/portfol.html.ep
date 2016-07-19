@@ -1,12 +1,38 @@
 % layout 'wrapper', title => 'Portfolio';
 
+<style type="text/css">
+	.trans {
+		width: 100px;
+		height: 100px;
+		background: #ff9c2f;
+		-webkit-transition: all 1s;
+		transition: all 1s;
+		display: block;
+		float: left;
+		padding:10px;
+		margin-left: 10px;
+	} 
+	.trans:hover{
+		background: #b25cda;
+	}
+
+	.bannerone{
+		position: absolute;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		background: #e6b823;
+	}
+</style>
+
 <div id='main' role='main'>
 	<div id='main-content-header'>
 		<div class='container'>
 			<div class='row'>
 				<div class='col-sm-12'>
 					<h1 class='title'>
-						Portfolio
+						PORTFOLIO
 					</h1>
 				</div>
 			</div>
@@ -27,95 +53,185 @@
 			</div>
 			<div class='row portfolio-boxes' id='portfolio-container'>
 				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
-					<a href='portfolio_detail.html'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/JQFDA_xhfg0";>
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/young.jpeg" />
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/young.jpg" />
 						</div>
 						<h3 class='title'>청춘, 지금</h3>
 						<p class='category'>Original</p>
 					</a>
 				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-mcn portfolio-item'>
-					<a href='portfolio_detail.html'>
+				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/tNDv96Ll2QU";>
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Malesuada" width="360" height="235" src="http://placehold.it/360x235" />
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/step.jpg" />
 						</div>
-						<h3 class='title'>Malesuada</h3>
+						<h3 class='title'>Step By Step</h3>
+						<p class='category'>Original</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://www.youtube.com/v/RgEOPn4iqpA";>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img src="assets/images/portfolio/big/lahen.jpg" />
+						</div>
+						<h3 class='title'>Lahene</h3>
+						<p class='category'>Original</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/JYbcqJCrsGw";>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img src="assets/images/portfolio/wongol.jpg" />
+						</div>
+						<h3 class='title'>원골</h3>
+						<p class='category'>Original</p>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-mcn portfolio-item'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/vFk-CUL9DJ0";>
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/monday.jpg" />
+						</div>
+						<h3 class='title'>Monday Booklet</h3>
 						<p class='category'>MCN</p>
 					</a>
 				</div>
 				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-					<a href='portfolio_detail.html'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/2t0-N4NBdwA";>
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Dictum vulputate" width="360" height="235" src="http://placehold.it/360x235" />
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/gadi.jpg" />
 						</div>
-						<h3 class='title'>Dictum vulputate</h3>
+						<h3 class='title'>Godinus</h3>
 						<p class='category'>PR/AD</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-cg portfolio-item'>
-					<a href='portfolio_detail.html'>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Semper massa" width="360" height="235" src="http://placehold.it/360x235" />
-						</div>
-						<h3 class='title'>Semper massa</h3>
-						<p class='category'>CG</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-filter-mcn portfolio-item'>
-					<a href='portfolio_detail.html'>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Lorem ipsum" width="360" height="235" src="http://placehold.it/360x235" />
-						</div>
-						<h3 class='title'>Lorem ipsum</h3>
-						<p class='category'>Original, MCN</p>
 					</a>
 				</div>
 				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-					<a href='portfolio_detail.html'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/ZKxsfBbm5vA";>
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Pellentesque" width="360" height="235" src="http://placehold.it/360x235" />
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/car.jpg" />
 						</div>
-						<h3 class='title'>Pellentesque</h3>
+						<h3 class='title'>Chevroet</h3>
 						<p class='category'>PR/AD</p>
 					</a>
 				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-mcn portfolio-item'>
-					<a href='portfolio_detail.html'>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/enaOHgyjbC8";>
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Malesuada" width="360" height="235" src="http://placehold.it/360x235" />
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/pru.jpg" />
 						</div>
-						<h3 class='title'>Malesuada</h3>
-						<p class='category'>MCN</p>
+						<h3 class='title'>PRUGIO</h3>
+						<p class='category'>PR/AD</p>
 					</a>
 				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-cg portfolio-item'>
-					<a href='portfolio_detail.html'>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/LoLdg6nObpo";>
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Cullamcorper" width="360" height="235" src="http://placehold.it/360x235" />
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/bile.jpg" />
 						</div>
-						<h3 class='title'>Cullamcorper</h3>
-						<p class='category'>CG</p>
+						<h3 class='title'>Ventavis</h3>
+						<p class='category'>PR/AD</p>
 					</a>
 				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-filter-cg portfolio-item'>
-					<a href='portfolio_detail.html'>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/bIj8XSf3o2c";>
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam posuere" width="360" height="235" src="http://placehold.it/360x235" />
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/wara.jpg" />
 						</div>
-						<h3 class='title'>Etiam posuere</h3>
-						<p class='category'>PR/AD, CG</p>
+						<h3 class='title'>WARAWARA</h3>
+						<p class='category'>PR/AD</p>
 					</a>
 				</div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a href="#">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/beet.jpg" />
+                                                </div>
+                                                <h3 class='title'>비트</h3>
+                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a href="#">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/cuchen.jpg" />
+                                                </div>
+                                                <h3 class='title'>쿠첸</h3>
+                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a href="#">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/greek.jpg" />
+                                                </div>
+                                                <h3 class='title'>그릭요거트</h3>
+                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a href="#">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/kbs.jpg" />
+                                                </div>
+                                                <h3 class='title'>KBS파노라마</h3>
+                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a href="#">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/LG.jpg" />
+                                                </div>
+                                                <h3 class='title'>LG김치냉장고</h3>
+                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a href="#">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/mbc.jpg" />
+                                                </div>
+                                                <h3 class='title'>MBC다큐프라임</h3>
+                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a href="#">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/mums.jpg" />
+                                                </div>
+                                                <h3 class='title'>MUMS</h3>
+                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a href="#">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/the.jpg" />
+                                                </div>
+                                                <h3 class='title'>더테라스</h3>
+                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
 			</div>
 		</div>
 	</div>

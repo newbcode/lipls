@@ -9,7 +9,7 @@
 <html lang='en'>
 <!-- <![endif] -->
 <head>
-<title>LIPLS Creative Vedio Studio</title>
+<title>LIPLS Creative Video Studio</title>
 <meta content='all' name='robots'>
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
@@ -43,17 +43,9 @@
 				<div class='collapse navbar-collapse navbar-header-collapse'>
 					<ul class='nav navbar-nav navbar-right'>
 						<li class='active dropdown'>
-						<a href='/about_us'>
-							<span>
-								LIPLS
-								<i class='fa fa-angle-down'></i>
-							</span>
-						</a>
-						</li>
-						<li class='dropdown'>
 						<a href='/services'>
 							<span>
-								Business
+								ABOUT
 								<i class='fa fa-angle-down'></i>
 							</span>
 						</a>
@@ -61,15 +53,7 @@
 						<li class='dropdown'>
 						<a href='/portfolio'>
 							<span>
-								Portfolio
-								<i class='fa fa-angle-down'></i>
-							</span>
-						</a>
-						</li>
-						<li class='dropdown'>
-						<a href='/contact'>
-							<span>
-								Contact
+								PRODUCTION
 								<i class='fa fa-angle-down'></i>
 							</span>
 						</a>
@@ -77,18 +61,29 @@
 						<li class='dropdown'>
 						<a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
 							<span>
-								Reservation
+								STUDIO
 								<i class='fa fa-angle-down'></i>
 							</span>
 						</a>
 						<ul class='dropdown-menu' role='menu'>
 							<li class=''>
-							<a href='reserv.html'>예약하기</a>
+							<a href='studio.html'>STUDIO</a>
 							</li>
 							<li class=''>
-							<a href='reserv_info.html'>예약정보</a>
+							<a href='reserv.html'>RESERVATION</a>
+							</li>
+							<li class=''>
+							<a href='reserv_info.html'>RENTAL GUIDE</a>
 							</li>
 						</ul>
+						</li>
+						<li class='dropdown'>
+						<a href='/contact'>
+							<span>
+								CONTACT
+								<i class='fa fa-angle-down'></i>
+							</span>
+						</a>
 						</li>
 					</ul>
 				</div>
@@ -142,5 +137,34 @@
 <script src="assets/javascripts/plugins/cycle/jquery.cycle.all.min.js" type="text/javascript"></script>
 <script src="assets/javascripts/jednotka.js" type="text/javascript"></script>
 
+<link rel="stylesheet" href="../assets/javascripts/plugins/youtube/venobox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../assets/javascripts/plugins/youtube/venobox.js"></script>
+
+<script type="text/javascript">
+     $(document).ready(function(){
+	$('.venobox').venobox({
+	    numeratio: true,
+	    infinigall: true,
+	    border: '20px'
+	});
+	$('.venoboxvid').venobox({
+	    bgcolor: '#000'
+	});
+	$('.venoboxframe').venobox({
+	    border: '6px'
+	});
+	$('.venoboxinline').venobox({
+	    framewidth: '300px',
+	    frameheight: 'auto',
+	    border: '10px',
+	    bgcolor: '#f46f00',
+	    titleattr: 'data-title'
+	});
+	$('.venoboxajax').venobox({
+	    border: '30px;',
+	    frameheight: '220px'
+	});
+    })
+</script>
 </body>
 </html>

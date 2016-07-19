@@ -1,0 +1,137 @@
+% layout 'wrapper', title => 'Portfolio';
+
+<div id='main' role='main'>
+	<div id='main-content-header'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<h1 class='title'>
+						STUDIO
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='main-content'>
+		<div class='container'>
+			<div class='row' id='portfolio-filter'>
+				<div class='col-sm-12'>
+					<ul class='nav nav-pills'>
+						<li class='active'><a data-filter="*" href="#">All</a></li>
+						<li><a data-filter=".portfolio-filter-horizon" href="#">Horizon</a></li>
+						<li><a data-filter=".portfolio-filter-room" href="#">Room</a></li>
+						<li><a data-filter=".portfolio-filter-gallery " href="#">Gallery</a></li>
+						<li><a data-filter=".portfolio-filter-etc" href="#">Etc.</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class='row portfolio-boxes' id='portfolio-container'>
+				<div class='col-sm-4 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/HORIZON/LIPLS.jpg" />
+					<h3 class='title'>LIPLS</h3>
+					<p class='category'>Horizon</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/HORIZON/3color.jpg" />
+					<h3 class='title'>삼색 배경지</h3>
+					<p class='category'>Horizon</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/HORIZON/wh2.jpg" />
+					<h3 class='title'>호리존 배경</h3>
+					<p class='category'>Horizon</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/HORIZON/wh.jpg" />
+					<h3 class='title'>호리존</h3>
+					<p class='category'>Horizon</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/HORIZON/light.jpg" />
+					<h3 class='title'>조명장비</h3>
+					<p class='category'>Horizon</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/HORIZON/hall.jpg" />
+					<h3 class='title'>내부시설</h3>
+					<p class='category'>Horizon</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-gallery portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/GALLERY/rbg.jpg" />
+					<h3 class='title'>레드 배경지</h3>
+					<p class='category'>Gallery</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-gallery portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/GALLERY/gal3.jpg" />
+					<h3 class='title'>소품</h3>
+					<p class='category'>Gallery</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-gallery portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/GALLERY/gal4.jpg" />
+					<h3 class='title'>소품</h3>
+					<p class='category'>Gallery</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-gallery portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/GALLERY/hbg.jpg" />
+					<h3 class='title'>호리존배경</h3>
+					<p class='category'>Gallery</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-gallery portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/GALLERY/bbg.jpg" />
+					<h3 class='title'>블랙배경지</h3>
+					<p class='category'>Gallery</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-gallery portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/GALLERY/bluebg.jpg" />
+					<h3 class='title'>블루배경지</h3>
+					<p class='category'>Gallery</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-room portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/ROOM/room1.jpg" />
+					<h3 class='title'>파우더룸</h3>
+					<p class='category'>Room</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-room portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/ROOM/room2.jpg" />
+					<h3 class='title'>파우더룸 구비품</h3>
+					<p class='category'>Room</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-room portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/ROOM/room3.jpg" />
+					<h3 class='title'>피팅룸</h3>
+					<p class='category'>Room</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-room portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/ROOM/room4.jpg" />
+					<h3 class='title'>피팅룸 내부</h3>
+					<p class='category'>Room</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-room portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/ROOM/room5.jpg" />
+					<h3 class='title'>무상대여</h3>
+					<p class='category'>Room</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-room portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/ROOM/room6.jpg" />
+					<h3 class='title'>미팅룸</h3>
+					<p class='category'>Room</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-etc portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/ETC/beam.jpg" />
+					<h3 class='title'>빔프로젝터</h3>
+					<p class='category'>Etc.</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-etc portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/ETC/beam2.jpg" />
+					<h3 class='title'>영상상영</h3>
+					<p class='category'>Etc.</p>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-etc portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/studio/ETC/beam3.jpg" />
+					<h3 class='title'>비디오아트</h3>
+					<p class='category'>Etc.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

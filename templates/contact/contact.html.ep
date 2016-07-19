@@ -6,7 +6,7 @@
 			<div class='row'>
 				<div class='col-sm-12'>
 					<h1 class='title'>
-						Contact LIPLS
+						CONTACT
 					</h1>
 				</div>
 			</div>
@@ -25,34 +25,6 @@
 					<div class='row text-center'>
 						<div class='col-sm-3'>
 							<div class='icon-wrap icon-circle contrast-bg icon-md'>
-								<i class='fa fa-map-marker text-white'></i>
-							</div>
-							<h3>Address</h3>
-							<ul class='list-unstyled'>
-								<li>서울시 강남구개포동</li>
-								<li>1236-21 B1</li>
-							</ul>
-						</div>
-						<div class='col-sm-3'>
-							<div class='icon-wrap icon-circle contrast-bg icon-md'>
-								<i class='fa fa-phone text-white'></i>
-							</div>
-							<h3>Telephone</h3>
-							<ul class='list-unstyled'>
-								<li><a href="tel:070-4221-0525">070-4221-0525</a></li>
-							</ul>
-						</div>
-						<div class='col-sm-3'>
-							<div class='icon-wrap icon-circle contrast-bg icon-md'>
-								<i class='fa fa-envelope-o text-white'></i>
-							</div>
-							<h3>E-Mail</h3>
-							<ul class='list-unstyled'>
-								<li><a href="mailto:contact@lipls.com">contact@lipls.com</a></li>
-							</ul>
-						</div>
-						<div class='col-sm-3'>
-							<div class='icon-wrap icon-circle contrast-bg icon-md'>
 								<i class='fa fa-clock-o text-white'></i>
 							</div>
 							<h3>Business hours</h3>
@@ -62,6 +34,43 @@
 								&mdash;
 								<strong>10:00 - 18:00</strong>
 								</li>
+							</ul>
+						</div>
+						<div class='col-sm-2'>
+							<div class='icon-wrap icon-circle contrast-bg icon-md'>
+								<i class='fa fa-map-marker text-white'></i>
+							</div>
+							<h3>Address</h3>
+							<ul class='list-unstyled'>
+								<li>서울시 강남구개포동</li>
+								<li>1236-21 B1</li>
+							</ul>
+						</div>
+						<div class='col-sm-2'>
+							<div class='icon-wrap icon-circle contrast-bg icon-md'>
+								<i class='fa fa-phone text-white'></i>
+							</div>
+							<h3>Telephone</h3>
+							<ul class='list-unstyled'>
+								<li><a href="tel:070-4221-0525">070-4221-0525</a></li>
+							</ul>
+						</div>
+						<div class='col-sm-2'>
+							<div class='icon-wrap icon-circle contrast-bg icon-md'>
+								<i class='fa fa-envelope-o text-white'></i>
+							</div>
+							<h3>E-Mail</h3>
+							<ul class='list-unstyled'>
+								<li><a href="mailto:contact@lipls.com">contact@lipls.com</a></li>
+							</ul>
+						</div>
+						<div class='col-sm-2'>
+							<div class='icon-wrap icon-circle contrast-bg icon-md'>
+								<i class='fa fa-comments text-white'></i>
+							</div>
+							<h3>YELLOW ID</h3>
+							<ul class='list-unstyled'>
+								<li><a href="#">카톡친구 찾기 - 리플스검색</a></li>
 							</ul>
 						</div>
 					</div>
@@ -75,7 +84,7 @@
 							Our location
 						</h2>
 					</div>
-					<div id='map-canvas'></div>
+					<div id="map" style="width:100%;height:350px;"></div>
 				</div>
 				<div class='col-sm-6'>
 					<div class='page-header page-header-with-icon'>
@@ -126,3 +135,27 @@
 		<i class='fa fa-chevron-up'></i>
 	</div>
 </div>
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=9f0ab68f6ec939af446a1506e4fbd355"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new daum.maps.LatLng(37.4776235, 127.0454987), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new daum.maps.Map(mapContainer, mapOption); 
+// 마커가 표시될 위치입니다 
+var markerPosition  = new daum.maps.LatLng(37.4776235, 127.0454987); 
+
+// 마커를 생성합니다
+var marker = new daum.maps.Marker({
+		    position: markerPosition
+	    });
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+// marker.setMap(null);  
+</script>
