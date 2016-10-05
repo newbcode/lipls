@@ -1,109 +1,49 @@
 % if($replys) {
-	% foreach my $time (sort keys $replys) {
-		% my $contents = $replys->{$time}->{reply}; 
-		<div class="well well-sm well-reply">
-			<h5><%= $replys->{$time}->{name} %></h5> </br>
+	% use Encode;
+	% foreach my $time (sort keys %{$replys}) {
+		% my $contents = decode('utf8', $replys->{$time}->{reply}); 
+		% my $name = decode('utf8', $replys->{$time}->{name}); 
+		<div class="well well-sm">
+			<h6><%= $name %> - [<%= $replys->{$time}->{wdate} %>]</h6>
 			<div id="contents" val="<%= $contents %>">
 				% $contents =~ s/(\r\n|\n)/<br>/g;
 				<%== $contents %> 
 			</div>
-			</br></br>
-			<small><%= $replys->{$time}->{wdate} %>     
-				% if($replys->{$time}->{name} eq session('user')) {
-					<button id="reply_mod_btn" reply_id="<%= $replys->{$time}->{id} %>" class="btn btn-default btn-xs">수정</button>
-					<button id="reply_del_btn" reply_id="<%= $replys->{$time}->{id} %>" class="btn btn-default btn-xs">삭제</button>
-				% }
-			</small> </br>
+			</br>
+			<button id="reply_del_btn" reply_id="<%= $replys->{$time}->{id} %>" class="btn btn-default btn-xs">삭제</button>
 		</div>
-		<hr>
 	% }
 % }
 
+
 <script>
-$(document).ready( function() {
-	// 댓글 취소 버튼 클릭 이벤트 등록
-	$('#reply_area #reply_mod_btn').click( function() {
-		var reply = $(this).parent().parent();
-		var notice_id = '<%= $notice_id %>';
-		var reply_id = $(this).attr('reply_id');
-		var contents = reply.find('#contents').attr('val');
+        $('#reply_del_btn').click( function() {
+                var reply_id = $(this).attr('reply_id');
 
-		//console.log("reply_id=" + reply_id);
-		//console.log("contents=" + contents);
+                if(confirm('정말 삭제하시겠습니까?') === false) {
+                        return false;
+                }
 
-		var text_rows = contents.split("<br>").length; 
-		if(text_rows < 3) {
-			text_rows = 3;
-		}
-
-		// 보기 모드에서 텍스트 입력 창 변환
-		reply.empty().append('<div><textarea id="update_content" class="form-control" rows="' + text_rows +'" style="width: 100%"></textarea></div>');
-		reply.find('#update_content').focus().val(contents);
-
-		$('#update_content').wysihtml5({
-			"font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
-			"emphasis": true, //Italics, bold, etc. Default true
-			"lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
-			"html": true, //Button which allows you to edit the generated HTML. Default false
-			"link": true, //Button to insert a link. Default true
-			"image": true, //Button to insert an image. Default true,
-			"color": true //Button to change color of font  
-		});
-
-		// 작성 버튼 추가 후 업데이트 이벤트 등록
-		reply.append('<button id="reply_write_btn" class="btn btn-default btn-xs btn-modal">작성</button>').find('#reply_write_btn').click( function() {
-			var post_data = new Object();
-			post_data.reply_id = reply_id;
-			post_data.content = reply.find('#update_content').val();
-
-			//console.log("update notice_id=" + notice_id + ", reply_id=" + reply_id + ", contents=" + post_data.content);
-
-			$.ajax( {
-				type: 'PUT',
-				url: '/noti_reply/' + reply_id,
-				data: {POSTDATA: JSON.stringify(post_data)},
-				success: function(data) {
-					$('#reply_area').empty().load('/noti_reply?notice_id=' + notice_id);
-				},
-				error: function() {
-					alert("댓글 수정 요청 실패");
-				},
-				dataType: "json",
-			} );
-		} );
-
-		// 작성 취소 버튼 추가 후 취소 이벤트 등록
-		reply.append('<button id="reply_cancel_btn" class="btn btn-default btn-xs btn-modal">취소</button>').find('#reply_cancel_btn').click( function() {
-			$('#reply_area').empty().load('/noti_reply?notice_id=' + notice_id);
-		} );
-	} );
-
-	$('#reply_area #reply_del_btn').click( function() {
-		var reply_id = $(this).attr('reply_id');
-
-		if(confirm('정말 삭제하시겠습니까?') === false) {
-			return false;
-		}
-
-		//console.log('reply_id=' + reply_id);
-		$.ajax({
-			type: "DELETE",
-			url: "/noti_reply/" + reply_id,
-			success: function(data) {
-				if(data.result == 'Y') {
-					// update reply area.
-					var reply_area = $('#reply_area');
-					reply_area.empty().load('/noti_reply?notice_id=<%= $notice_id %>');
-				}
-				else {
-					alert('댓글 삭제 에러');
-				}
-			},
-			error: function() {
-				alert("댓글 삭제 요청 실패");
-			},
-			dataType: "json", 
-		});
-	} );
-} );
+                //console.log('reply_id=' + reply_id);
+                $.ajax({
+                        type: "DELETE",
+                        url: "/reserv_reply?reserv_id=" + reply_id,
+                        success: function(data) {
+                                if(data.result == 'Y') {
+                                        // update reply area.
+                                        var reply_area = $('#reply_area_' + reply_id);
+					reply_area.empty().load('/reserv_reply?notice_id=' + reply_id);
+					$(location).attr('href', 'http://lipls.com/reserv');
+					
+                                }
+                                else {
+                                        alert('댓글 삭제 에러');
+                                }
+                        },
+                        error: function() {
+                                alert("댓글 삭제 요청 실패");
+                        },
+                        dataType: "json",
+                });
+        } );
 </script>

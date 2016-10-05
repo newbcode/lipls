@@ -73,10 +73,10 @@
 					</a>
 				</div>
 				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://www.youtube.com/v/RgEOPn4iqpA";>
+					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/RgEOPn4iqpA";>
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img src="assets/images/portfolio/big/lahen.jpg" />
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/lahen.jpg" />
 						</div>
 						<h3 class='title'>Lahene</h3>
 						<p class='category'>Original</p>
@@ -86,7 +86,7 @@
 					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/JYbcqJCrsGw";>
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img src="assets/images/portfolio/wongol.jpg" />
+							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/wongol.jpg" />
 						</div>
 						<h3 class='title'>원골</h3>
 						<p class='category'>Original</p>

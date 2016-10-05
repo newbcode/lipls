@@ -4,13 +4,13 @@
 		<table class="table table-bordered table-striped">
 			<tbody>
 			% use Encode;
-			% my $id;
+			% my $r_id;
 			% foreach my $item ( @{$read} ) {
 			% my $name = decode('utf8', $item->{name});
 			% my $subject = decode('utf8', $item->{subject});
 			% my $pay_name = decode('utf8', $item->{pay_name});
 			% my $shot_desc = decode('utf8', $item->{shot_desc});
-			% $id = $item->{id};
+			% $r_id = $item->{id};
 			<tr>
 				<td><strong>제목</strong></td>
 				<td><%= $subject %></td>
@@ -45,116 +45,44 @@
 	</div>
 </div>
 <div align="right">
-	<a href="/reserv_del?id=<%= $id %>" id="deleteBtn" class="btn btn-danger btn-xs btn-pull-right" role="button">삭제</a>
+	<a href="/reserv_del?id=<%= $r_id %>" id="deleteBtn" class="btn btn-danger btn-xs btn-pull-right" role="button">삭제</a>
 	<!-- <a href="#" id="deleteBtn" class="btn btn-success btn-xs btn-pull-right" role="button">수정</a> -->
 	<button type="button" class="btn btn-primary btn-xs btn-pull-right" data-dismiss="modal">확인</button>
 </div>
-<hr>
 <h4>댓글</h4>
-<div id="reply_area"></div>
+<div id="reply_area_<%= $r_id %>"></div>
 <div class="form-group">
 	<textarea class="form-control" rows="5" id="reply_content"></textarea>
-	<button id="reply_btn" class="btn btn-default btn-xs btn-modal pull-right" type="submit">댓글작성</button>
+	<button id="reply_btn" class="btn btn-default btn-xs pull-right" type="submit">댓글작성</button>
 </div>
 
 <script>
-	$(document).ready( function() {
-		$('#reply_area').load('/reserv_reply?notice_id=<%= $id %>');
+	$('#reply_area_<%= $r_id %>').load('/reserv_reply?notice_id=<%= $r_id %>');
 
-		$('#mod_btn').click( function() {
-			var notice = $('#notice');
-			var notice_id = $(this).attr('notice_id');
-			var content = notice.find('#content').attr('val');
-			var btn_div = $('#btn_div');
-			var txta_row = content.split("<br>").length;
+        $('#reply_btn').click(function() {
+                var post_data = new Object();
+                post_data.notice_id= '<%= $r_id %>';
+                post_data.content = $('#reply_content').val();
 
-			if(txta_row < 20) {
-				txta_row = 20;
-			}
-
-			notice.empty().append('<textarea id="noti_update_content" class="form-control" rows="' + txta_row +'" style="width: 100%"></textarea>');
-			notice.find('#noti_update_content').focus().val(content);
-			
-			$('#noti_update_content').wysihtml5({
-				"font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
-				"emphasis": true, //Italics, bold, etc. Default true
-				"lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
-				"html": true, //Button which allows you to edit the generated HTML. Default false
-				"link": true, //Button to insert a link. Default true
-				"image": true, //Button to insert an image. Default true,
-				"color": true //Button to change color of font  
-			});
-
-			btn_div.empty();
-
-			btn_div.append('<button id="mod_btn" class="btn btn-default btn-modal btn-xs pull-right">작성</button>').find('#mod_btn').click( function() {
-				var post_data = new Object();
-				post_data.notice_id = notice_id;
-				post_data.content = notice.find('#noti_update_content').val();
-
-				//console.log("update notice_id=" + notice_id + ", contents=" + post_data.content);
-
-				$.ajax( {
-					type: 'PUT',
-					url: '/notice_write/' + notice_id,
-					data: {POSTDATA: JSON.stringify(post_data)},
-					success: function(data) {
-						notice.parent().parent().empty().load('/noti_read?id=' + notice_id);
-					},
-					error: function() {
-						alert("공지글 수정 요청 실패");
-					},
-					dataType: "json",
-				} );
-			} );
-			
-			btn_div.append('<button id="cancel_btn" class="btn btn-default btn-xs btn-modal pull-right">취소</button>').find('#cancel_btn').click( function() {
-				notice.parent().parent().empty().load('/noti_read?id=' + notice_id);
-			} );
-		} );
-
-		$('#reply_btn').click(function() {
-			var post_data = new Object();
-			post_data.notice_id = <%= $id %>;
-			post_data.content = $('#reply_content').val();
-
-			$.ajax({
-				type: "POST",
-				url: "/reserv_reply",
-				data: {POSTDATA: JSON.stringify(post_data)},
-				success: function(data) {
-					if(data.result == 'Y') {
-						// update reply area
-						var reply_area = $('#reply_area');
-						reply_area.empty().load('/reserv_reply?notice_id=<%= $id %>');
-						$('.modal').animate({ scrollTop: $(document).height()}, 200, 'swing');
-					} else {
-						alert('댓글 작성 에러');
-					}
-				},
-				error: function() {
-					alert("댓글 작성 요청 실패");
-				},
-				dataType: "json", 
-			});
-		} );
-
-		$('#reply_content').wysihtml5({
-			"font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
-			"emphasis": true, //Italics, bold, etc. Default true
-			"lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
-			"html": true, //Button which allows you to edit the generated HTML. Default false
-			"link": true, //Button to insert a link. Default true
-			"image": true, //Button to insert an image. Default true,
-			"color": true,//Button to change color of font  
-		});
-	});
-
-	$('#deleteBtn').click( function() {
-		if(confirm('정말 삭제하시겠습니까?') === true) {
-			return true;
-		}
-
-		return false;
-	} );
+                $.ajax({
+                        type: "POST",
+                        url: "/reserv_reply",
+                        data: {POSTDATA: JSON.stringify(post_data)},
+                        success: function(data) { 
+                                if(data.result == 'Y') {
+                                        // update reply area
+                                        var reply_area = $('#reply_area_<%= $r_id %>');
+                                        reply_area.empty().load('/reserv_reply?notice_id=<%= $r_id %>');
+					$('textarea#reply_content').val(" ");
+                                        $('.modal').animate({ scrollTop: $(document).height()}, 200, 'swing');
+                                } else {
+                                        alert('댓글 작성 에러');
+                                }
+                        },
+                        error: function() {
+                                alert("댓글 작성 요청 실패");
+                        },
+                        dataType: "json",
+                });
+        } );
 </script>

@@ -18,8 +18,8 @@ package Reserv;
 
 use Moose;
 use DBIx::Simple;
-use Data::Printer;
 use Date::Parse;
+use Data::Dumper;
 
 has 'table_name' => (
 	is  => 'rw',
@@ -89,11 +89,11 @@ sub t_read {
 		my $replys;
 		while( my $row = $reply_rows->hash) {
 			my $datetime = str2time("$row->{wdate} -0900");
-			#$log->info("date: $datetime");
 			$replys->{$datetime} = $row;
+			#$log->info("date: $count");
 			#$log->info("RE: $replys->{$datetime}")
 		}
-		
+
 		return $replys;
 	}
 }
@@ -117,7 +117,32 @@ sub t_list {
 	my $h = $dbh->query( "SELECT `id`, `name`, `subject`, `wdate` FROM $table") or die $dbh->error;
 	my @result = $h->hashes;
 
-	return @result;
+	my $info;
+	foreach my $h ( @result ) {
+		#$log->info("$h->{id}");
+		$info->{$h}->{id} 	= $h->{id};
+		$info->{$h}->{name} 	= $h->{name};
+		$info->{$h}->{subject} 	= $h->{subject};
+		$info->{$h}->{wdate} 	= $h->{wdate};
+		$info->{$h}->{re_cnt} 	= reply_cnt($h->{id});
+	}
+	#$log->info("P" . Dumper($info));
+	#return @result;
+	return $info;
+}
+
+sub reply_cnt {
+	my $id = shift;
+	my $table = 'reserv_board_reply';
+
+	my $reply_rows = $dbh->query("SELECT * FROM $table WHERE reserv_id=$id") or die $dbh->error;
+	my $replys;
+	my $cnt = 0;
+	while( my $row = $reply_rows->hash) {
+		$cnt++;
+	}
+	#$log->info("id: $id re_cnt: $cnt");
+	return $cnt;
 }
 
 1;

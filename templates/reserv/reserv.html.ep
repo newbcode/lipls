@@ -39,22 +39,26 @@
 									<tbody>
 									% use Encode;
 									% my $cnt = 1;
-									% foreach my $item ( @{$list} )  {
-									% my $name = decode('utf8', $item->{name});
-									% my $subject = decode('utf8', $item->{subject});
+									% foreach my $item ( sort keys %{$list} )  {
+									% my $name = decode('utf8', $list->{$item}->{name});
+									% my $subject = decode('utf8', $list->{$item}->{subject});
+									% my $reply_count = '';
+									% if($list->{$item}->{'re_cnt'}) {
+										% $reply_count = "($list->{$item}->{re_cnt})";
+									% }
 									<tr class='  '>
 										<td> <%= $cnt %> </td>
 										<td> <%= $name %></td>
 										<td>
-											<a href="#" data-remote="reserv_read_check/?id=<%= $item->{id} %>" data-target="#reserv_read_check_<%= $item->{id} %>" data-toggle="modal"><%= $subject %></a>
+											<a href="#" data-remote="reserv_read_check/?id=<%= $list->{$item}->{id} %>" data-target="#reserv_read_check_<%= $list->{$item}->{id} %>" data-toggle="modal"><%= $subject %><%= $reply_count %></a>
 											<!-- reserv read check button modal -->
-											<div class="modal fade board" id="reserv_read_check_<%= $item->{id} %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal fade board" id="reserv_read_check_<%= $list->{$item}->{id} %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 												<div class="modal-dialog modal-md">
 													<div class="modal-content board-content"></div>
 												</div>
 											</div>
 										</td>
-										<td> <%= $item->{wdate} %></td>
+										<td> <%= $list->{$item}->{wdate} %></td>
 									</tr>
 									% $cnt++;
 									%}

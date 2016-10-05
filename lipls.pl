@@ -6,9 +6,10 @@ use Moose;
 use Mojo::Log;
 use Encode;
 use Data::Printer;
-use lib "/home/newbcode/server/lipls/lib";
+use lib "./lib";
 
 use Reserv;
+use MailSend;
 
 # Documentation browser under "/perldoc"
 plugin 'PODRenderer';
@@ -47,8 +48,9 @@ get '/studio' => sub {
 get '/reserv' => sub {
 	my $self = shift;
 
-	my @r = Reserv->new( table_name => 'reserv_board' )->t_list();
-	$self->stash( list => \@r );
+	#my @r = Reserv->new( table_name => 'reserv_board' )->t_list();
+	my $r = Reserv->new( table_name => 'reserv_board' )->t_list();
+	$self->stash( list => $r );
 
 } => '/reserv/reserv';
 
@@ -141,24 +143,22 @@ get '/reserv_reply' => sub {
 	my $self = shift;
 	my $id = $self->param('notice_id');
 
-	$log->info("NOTICE: $id");
+	#$log->info("NOTICE: $id");
 	my $replys = Reserv->new( list_id => $id, table_name => 'reserv_board_reply' )->t_read();
 
 	$self->stash( replys => $replys, notice_id => $id );
-} => 'reserv_reply';
+} => '/reserv/reserv_reply';
 
 # 예약 게시판 댓글 저장
 post '/reserv_reply' => sub {                                                 
 	my $self = shift;
 
-	my $selfontent = $self->param('POSTDATA');                             
-	my $resp = {
-		result => 'N',
-	};
+	my $content = $self->param('POSTDATA');                             
+	my $resp = { result => 'N', };
 
-	my $jdata = from_json($selfontent);
+	my $jdata = from_json($content);
 
-	#$log->info("notice_id=$jdata->{notice_id}, content=$jdata->{content}");
+	$log->info("notice_id=$jdata->{notice_id}, content=$jdata->{content}");
 
 	if(exists $jdata->{notice_id} && exists $jdata->{content}) {
 		my $r = Reserv->new( table_name => 'reserv_board_reply' )->t_write( $jdata, $self->session('name') );
@@ -167,7 +167,36 @@ post '/reserv_reply' => sub {
 	else {
 		$resp->{error} = 'argument error';
 	}       
+	$log->info("$resp->{result}");
 
+	$self->render(json => $resp);
+};
+
+# 댓글 삭제
+del '/reserv_reply' => sub {
+	my $self = shift;
+
+	my $id = $self->param('reserv_id');
+
+	my $resp = { result => 'N', };
+
+	my $row = Reserv->new( table_name => 'reserv_board_reply',  list_id => $id)->t_del();
+	$resp->{result} = 'Y';
+	$self->render(json => $resp);
+};
+
+# 메일 보내기
+post '/mail_send' => sub {                                                 
+	my $self = shift;
+
+	my $content = $self->param('POSTDATA');                             
+	my $jdata = from_json($content);
+
+	$log->info("$jdata->{name}, $jdata->{email}, $jdata->{message}");
+
+	my $ret = MailSend->new( name => $jdata->{name}, email => $jdata->{email} )->send_mail($jdata->{message}); 
+
+	my $resp = { result  => $ret };
 	$self->render(json => $resp);
 };
 

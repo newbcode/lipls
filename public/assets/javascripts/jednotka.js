@@ -290,7 +290,7 @@
         inputs = $(this).find("input, textarea");
         return $.ajax({
           type: "POST",
-          url: "contact.php",
+          url: "/mail_send",
           data: $(this).serialize(),
           success: function(data) {
             if (data === "success") {
