@@ -9,7 +9,7 @@
 <html lang='en'>
 <!-- <![endif] -->
 <head>
-<title>LIPLS Creative Video Studio</title>
+<title>리플스_LIPLS PHOTO STUDIO</title>
 <meta content='all' name='robots'>
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
@@ -44,17 +44,17 @@
 				<div class='collapse navbar-collapse navbar-header-collapse'>
 					<ul class='nav navbar-nav navbar-right'>
 						<li class='active dropdown'>
-						<a href='/services'>
+						<a href='/portfolio'>
 							<span>
-								ABOUT
+								Portfolio
 								<i class='fa fa-angle-down'></i>
 							</span>
 						</a>
 						</li>
 						<li class='dropdown'>
-						<a href='/portfolio'>
+						<a href='/studio'>
 							<span>
-								PRODUCTION
+								Studio
 								<i class='fa fa-angle-down'></i>
 							</span>
 						</a>
@@ -62,14 +62,11 @@
 						<li class='dropdown'>
 						<a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
 							<span>
-								STUDIO
+								Reservation
 								<i class='fa fa-angle-down'></i>
 							</span>
 						</a>
 						<ul class='dropdown-menu' role='menu'>
-							<li class=''>
-							<a href='studio.html'>STUDIO</a>
-							</li>
 							<li class=''>
 							<a href='reserv.html'>RESERVATION</a>
 							</li>
@@ -81,7 +78,7 @@
 						<li class='dropdown'>
 						<a href='/contact'>
 							<span>
-								CONTACT
+								Contact
 								<i class='fa fa-angle-down'></i>
 							</span>
 						</a>
@@ -140,6 +137,7 @@
 
 <link rel="stylesheet" href="../assets/javascripts/plugins/youtube/venobox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="../assets/javascripts/plugins/youtube/venobox.js"></script>
+<script type="text/javascript" src="../assets/javascripts/plugins/youtube/jquery.mb.YTPlayer.js"></script>
 
 <script type="text/javascript">
      $(document).ready(function(){
@@ -166,6 +164,12 @@
 	    frameheight: '220px'
 	});
     })
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+	$(".player").mb_YTPlayer();
+	});
 </script>
 </body>
 </html>

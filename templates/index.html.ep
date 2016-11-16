@@ -1,4 +1,4 @@
-% layout 'wrapper', title => 'LIPLS';      
+% layout 'wrapper';      
 
 <div id='main' role='main'>
 	<!-- / carousel blur -->
@@ -34,6 +34,7 @@
 			</li>
 		</ul>
 	</div>
+
 	<div id='main-content'>
 		<div class='container'>
 			<div class='row'>
@@ -53,8 +54,8 @@
 									</div>
 									<div class='panel-heading'><img class="img-responsive-sm" alt="Project planning" width="768" height="300" src="../assets/images/camera.jpeg" /></div>
 									<div class='panel-body'>
-										<h3 class='panel-title'>영상제작</h3>
-										<p>기업홍보, 제품PR등 다양한 홍보영상과 감성적인 필름을 만듭니다.</p>
+										<h3 class='panel-title'>제품광고 촬영</h3>
+										<p>제품 지면광고 사진 및 온라인 광고사진 촬영</p>
 									</div>
 								</a>
 							</div>
@@ -65,8 +66,8 @@
 									</div>
 									<div class='panel-heading'><img class="img-responsive-sm" alt="Easy customizable" width="768" height="300" src="../assets/images/renz.jpeg" /></div>
 									<div class='panel-body'>
-										<h3 class='panel-title'>스튜디오</h3>
-										<p>호리존 스튜디오 및 장비대여와 촬영대행, 후보정등 촬영에 대한 전반적인 작업을 합니다.</p>
+										<h3 class='panel-title'>인물 프로필 촬영</h3>
+										<p>다양한 컨셉으로 고퀄리티의 사진촬영</p>
 									</div>
 								</a>
 							</div>
@@ -77,64 +78,11 @@
 									</div>
 									<div class='panel-heading'><img class="img-responsive-sm" alt="Fastest workers" width="768" height="300" src="../assets/images/shoter.jpeg" /></div>
 									<div class='panel-body'>
-										<h3 class='panel-title'>퍼니필름</h3>
-										<p>세상에 없던 필름, 재미있는 스낵영상과 자유로운 UCC크리에이터들과 함께합니다.</p>
+										<h3 class='panel-title'>패션화보 촬영</h3>
+										<p>화보사진 촬영 및 보정/화보촬영 현장 스케치 영상제작</p>
 									</div>
 								</a>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class='row'>
-				<div class='col-sm-12'>
-					<div class='page-header page-header-with-icon'>
-						<i class='fa fa-suitcase'></i>
-						<h2>
-							Last Projects
-						</h2>
-					</div>
-					<div class='row portfolio-boxes'>
-						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-							<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/ZKxsfBbm5vA";>
-								<div class='image-link'>
-									<i class='fa fa-search'></i>
-									<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="262" height="262" src="assets/images/portfolio/chevrolet.jpeg">
-								</div>
-							</a>
-							<h3 class='title'>Chevrolet</h3>
-							<p class='category'>쉐보레 말리부 런칭행사 인터뷰 & oap</p>
-						</div>
-						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-							<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/enaOHgyjbC8";>
-								<div class='image-link'>
-									<i class='fa fa-search'></i>
-									<img class="img-responsive img-rounded center-block" alt="Malesuada" width="262" height="262" src="assets/images/portfolio/prugio.jpeg" />
-								</div>
-							</a>
-							<h3 class='title'>PRUGIO</h3>
-							<p class='category'>용산 푸르지오 모델하우스 상영 영상</p>
-						</div>
-						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-							<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/bIj8XSf3o2c";>
-								<div class='image-link'>
-									<i class='fa fa-search'></i>
-									<img class="img-responsive img-rounded center-block" alt="Dictum vulputate" width="262" height="262" src="assets/images/portfolio/warawara.jpeg" />
-								</div>
-								<h3 class='title'>WARA</h3>
-								<p class='category'>와라와라 사내 매뉴얼 영상</p>
-							</a>
-						</div>
-						<div class='col-sm-3 col-xs-6 no-mb-t-xs portfolio-box'>
-							<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/2t0-N4NBdwA";>
-								<div class='image-link'>
-									<i class='fa fa-search'></i>
-									<img class="img-responsive img-rounded center-block" alt="Semper massa" width="262" height="262" src="assets/images/portfolio/gadanis.jpeg" />
-								</div>
-								<h3 class='title'>Godinus</h3>
-								<p class='category'>온라인 게임 가디너스 메이킹 & 인터뷰
-								</p>
-							</a>
 						</div>
 					</div>
 				</div>

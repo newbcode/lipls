@@ -44,192 +44,212 @@
 				<div class='col-sm-12'>
 					<ul class='nav nav-pills'>
 						<li class='active'><a data-filter="*" href="#">All</a></li>
-						<li><a data-filter=".portfolio-filter-original" href="#">Original</a></li>
 						<li><a data-filter=".portfolio-filter-prad" href="#">PR/AD</a></li>
-						<li><a data-filter=".portfolio-filter-mcn " href="#">MCN</a></li>
-						<li><a data-filter=".portfolio-filter-cg" href="#">CG</a></li>
+						<li><a data-filter=".portfolio-filter-profile " href="#">Profile</a></li>
+						<li><a data-filter=".portfolio-filter-fashion" href="#">Fashion</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class='row portfolio-boxes' id='portfolio-container'>
-				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/JQFDA_xhfg0";>
+				<div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/gag01.jpg">
 						<div class='image-link'>
 							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/young.jpg" />
+							<img src="assets/images/portfolio/profile/thumbnail/s_gag01.jpg" />
 						</div>
-						<h3 class='title'>청춘, 지금</h3>
-						<p class='category'>Original</p>
 					</a>
 				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/tNDv96Ll2QU";>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/step.jpg" />
-						</div>
-						<h3 class='title'>Step By Step</h3>
-						<p class='category'>Original</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/RgEOPn4iqpA";>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/lahen.jpg" />
-						</div>
-						<h3 class='title'>Lahene</h3>
-						<p class='category'>Original</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-original portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/JYbcqJCrsGw";>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/wongol.jpg" />
-						</div>
-						<h3 class='title'>원골</h3>
-						<p class='category'>Original</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-mcn portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/vFk-CUL9DJ0";>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/monday.jpg" />
-						</div>
-						<h3 class='title'>Monday Booklet</h3>
-						<p class='category'>MCN</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/2t0-N4NBdwA";>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/gadi.jpg" />
-						</div>
-						<h3 class='title'>Godinus</h3>
-						<p class='category'>PR/AD</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/ZKxsfBbm5vA";>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/car.jpg" />
-						</div>
-						<h3 class='title'>Chevroet</h3>
-						<p class='category'>PR/AD</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/enaOHgyjbC8";>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/pru.jpg" />
-						</div>
-						<h3 class='title'>PRUGIO</h3>
-						<p class='category'>PR/AD</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/LoLdg6nObpo";>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/bile.jpg" />
-						</div>
-						<h3 class='title'>Ventavis</h3>
-						<p class='category'>PR/AD</p>
-					</a>
-				</div>
-				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-					<a class="venoboxvid" data-gall="gall-video" data-autoplay="true" data-type="youtube" href="https://youtu.be/bIj8XSf3o2c";>
-						<div class='image-link'>
-							<i class='fa fa-search'></i>
-							<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/big/wara.jpg" />
-						</div>
-						<h3 class='title'>WARAWARA</h3>
-						<p class='category'>PR/AD</p>
-					</a>
-				</div>
-                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-                                        <a href="#">
+                                <div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/gag02.jpg">
                                                 <div class='image-link'>
                                                         <i class='fa fa-search'></i>
-                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/beet.jpg" />
+                                                        <img src="assets/images/portfolio/profile/thumbnail/s_gag02.jpg" />
                                                 </div>
-                                                <h3 class='title'>비트</h3>
-                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/gag03.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/profile/thumbnail/s_gag03.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/gag04.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/profile/thumbnail/s_gag04.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/gag05.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/profile/thumbnail/s_gag05.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/pe01.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/profile/thumbnail/s_pe01.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/pe02.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/profile/thumbnail/s_pe02.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/baby01.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/profile/thumbnail/s_baby01.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/baby02.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/profile/thumbnail/s_baby02.jpg" />
+                                                </div>
                                         </a>
                                 </div>
                                 <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-                                        <a href="#">
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/ad01.jpg">
                                                 <div class='image-link'>
                                                         <i class='fa fa-search'></i>
-                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/cuchen.jpg" />
+                                                        <img src="assets/images/portfolio/prad/thumbnail/s_ad01.jpg" />
                                                 </div>
-                                                <h3 class='title'>쿠첸</h3>
-                                                <p class='category'>PR/AD</p>
                                         </a>
                                 </div>
                                 <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-                                        <a href="#">
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/ad02.jpg">
                                                 <div class='image-link'>
                                                         <i class='fa fa-search'></i>
-                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/greek.jpg" />
+                                                        <img src="assets/images/portfolio/prad/thumbnail/s_ad02.jpg" />
                                                 </div>
-                                                <h3 class='title'>그릭요거트</h3>
-                                                <p class='category'>PR/AD</p>
                                         </a>
                                 </div>
                                 <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-                                        <a href="#">
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/ad03.png">
                                                 <div class='image-link'>
                                                         <i class='fa fa-search'></i>
-                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/kbs.jpg" />
+                                                        <img src="assets/images/portfolio/prad/thumbnail/s_ad03.png" />
                                                 </div>
-                                                <h3 class='title'>KBS파노라마</h3>
-                                                <p class='category'>PR/AD</p>
                                         </a>
                                 </div>
                                 <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-                                        <a href="#">
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/ad04.jpeg">
                                                 <div class='image-link'>
                                                         <i class='fa fa-search'></i>
-                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/LG.jpg" />
+                                                        <img src="assets/images/portfolio/prad/thumbnail/s_ad04.jpeg" />
                                                 </div>
-                                                <h3 class='title'>LG김치냉장고</h3>
-                                                <p class='category'>PR/AD</p>
                                         </a>
                                 </div>
                                 <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-                                        <a href="#">
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/ad05.jpg">
                                                 <div class='image-link'>
                                                         <i class='fa fa-search'></i>
-                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/mbc.jpg" />
+                                                        <img src="assets/images/portfolio/prad/thumbnail/s_ad05.jpg" />
                                                 </div>
-                                                <h3 class='title'>MBC다큐프라임</h3>
-                                                <p class='category'>PR/AD</p>
                                         </a>
                                 </div>
                                 <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-                                        <a href="#">
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/ad06.png">
                                                 <div class='image-link'>
                                                         <i class='fa fa-search'></i>
-                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/mums.jpg" />
+                                                        <img src="assets/images/portfolio/prad/thumbnail/s_ad06.png" />
                                                 </div>
-                                                <h3 class='title'>MUMS</h3>
-                                                <p class='category'>PR/AD</p>
                                         </a>
                                 </div>
                                 <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
-                                        <a href="#">
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/ad07.png">
                                                 <div class='image-link'>
                                                         <i class='fa fa-search'></i>
-                                                        <img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="360" height="235" src="assets/images/portfolio/the.jpg" />
+                                                        <img src="assets/images/portfolio/prad/thumbnail/s_ad07.png" />
                                                 </div>
-                                                <h3 class='title'>더테라스</h3>
-                                                <p class='category'>PR/AD</p>
+                                        </a>
+                                </div>
+
+                                <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs01.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/s_fs01.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs02.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/s_fs02.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs03.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/s_fs03.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs04.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/s_fs04.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs05.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/s_fs05.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs06.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/s_fs06.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs07.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/s_fs07.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs08.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/s_fs08.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs09.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/s_fs09.jpg" />
+                                                </div>
                                         </a>
                                 </div>
 			</div>

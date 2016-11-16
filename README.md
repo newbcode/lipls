@@ -1,2 +1,2 @@
 # lipls
-lipls home
+lipls studio homepate

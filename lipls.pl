@@ -6,6 +6,8 @@ use Moose;
 use Mojo::Log;
 use Encode;
 use Data::Printer;
+use utf8;
+
 use lib "./lib";
 
 use Reserv;
@@ -192,9 +194,12 @@ post '/mail_send' => sub {
 	my $content = $self->param('POSTDATA');                             
 	my $jdata = from_json($content);
 
-	$log->info("$jdata->{name}, $jdata->{email}, $jdata->{message}");
-
-	my $ret = MailSend->new( name => $jdata->{name}, email => $jdata->{email} )->send_mail($jdata->{message}); 
+	#$log->info("$jdata->{name}, $jdata->{email}, $jdata->{message}");
+	
+	my $body = "이름: $jdata->{name}\n"."메일주소: $jdata->{email}\n"."문의내용\n"."\n"."$jdata->{message}";
+	$body = encode('utf-8', $body);
+	
+	my $ret = MailSend->new( name => $jdata->{name}, email => $jdata->{email} )->send_mail($body); 
 
 	my $resp = { result  => $ret };
 	$self->render(json => $resp);

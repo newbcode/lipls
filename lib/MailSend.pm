@@ -47,20 +47,20 @@ sub send_mail {
 	);
 
 	if ( $mail == -1 ) {
-		print "error: $error_msg";
-		exit;
+		return 'N';
 	}
 
 	my ( $result, $err_msg ) = $mail->send(
-		#-to      => 'contact@lipls.com',
-		-to      => 'newbcode@naver.com',
-		-subject => "$subject"."-- $self->name",
+		-to      => 'contact@lipls.com',
+		#-to      => 'newbcode@naver.com',
+		-subject => "$subject",
 		-body    => $message,
 
 		# 첨부 파일이 있는 경우
 		#-attachments=> '/home/gypark/doc.txt,/home/gypark/music.mp3',
 	);
-	return 'success';
+
+	return 'Y';
 }
 
 1;

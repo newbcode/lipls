@@ -101,27 +101,27 @@
 						<div class='row'>
 							<div class='col-sm-6'>
 								<div class='form-group control-group'>
-									<input class='form-control' data-rule-required='true' name='name' placeholder='Name' type='text'>
+									<input class='form-control' data-rule-required='true' name='name' id='name' placeholder='이름' type='text'>
 									<!-- / this field is required for simple anti spam function, don't remove it! -->
 									<input class='form-control' name='human' placeholder='Are you human?' style='display: none;' type='text'>
 								</div>
 							</div>
 							<div class='col-sm-6'>
 								<div class='form-group control-group'>
-									<input class='form-control' data-rule-email='true' data-rule-required='true' name='email' placeholder='E-Mail' type='email'>
+									<input class='form-control' data-rule-email='true' data-rule-required='true' name='email' id='email' placeholder='연락받으실 E-Mail' type='email'>
 								</div>
 							</div>
 						</div>
 						<div class='row'>
 							<div class='col-sm-12'>
 								<div class='form-group control-group'>
-									<textarea class='form-control' data-rule-required='true' name='message' placeholder='Your message...'></textarea>
+									<textarea class='form-control' rows='10' data-rule-required='true' name='message' id='message' placeholder='문의 내용...'></textarea>
 								</div>
 							</div>
 						</div>
 						<div class='row'>
 							<div class='col-sm-12'>
-								<button class='btn btn-contrast btn-block form-contact-submit' data-loading-text="&lt;i class='fa fa-refresh fa-spin'&gt;&lt;/i&gt; Sending..." type='submit'>
+								<button id="mail_send_btn" class='btn btn-contrast btn-block form-contact-submit' data-loading-text="&lt;i class='fa fa-refresh fa-spin'&gt;&lt;/i&gt; Sending..." type='button'>
 									Send message
 								</button>
 							</div>
@@ -136,6 +136,8 @@
 	</div>
 </div>
 <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=9f0ab68f6ec939af446a1506e4fbd355"></script>
+<script src="../assets/javascripts/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../lipls_app/mailsend.js"></script>
 <script>
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
