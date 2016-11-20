@@ -9,7 +9,7 @@
 <html lang='en'>
 <!-- <![endif] -->
 <head>
-<title>리플스_LIPLS PHOTO STUDIO</title>
+<title>PHOTO LIPLS_리플스</title>
 <meta content='all' name='robots'>
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
@@ -43,7 +43,7 @@
 				</div>
 				<div class='collapse navbar-collapse navbar-header-collapse'>
 					<ul class='nav navbar-nav navbar-right'>
-						<li class='active dropdown'>
+						<li class='dropdown'>
 						<a href='/portfolio'>
 							<span>
 								Portfolio

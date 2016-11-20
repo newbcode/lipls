@@ -51,6 +51,31 @@
 				</div>
 			</div>
 			<div class='row portfolio-boxes' id='portfolio-container'>
+				
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/hifood.jpg">
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img src="assets/images/portfolio/prad/thumbnail/thumb_hifood.jpg" />
+						</div>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/2x1.jpg">
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img src="assets/images/portfolio/prad/thumbnail/thumb_2x1.jpg" />
+						</div>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/swipe01.jpg">
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img src="assets/images/portfolio/prad/thumbnail/thumb_swipe04.jpg" />
+						</div>
+					</a>
+				</div>
 				<div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
 					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/gag01.jpg">
 						<div class='image-link'>
