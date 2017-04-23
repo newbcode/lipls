@@ -23,8 +23,32 @@
 			</div>
 			<div class='row portfolio-boxes' id='portfolio-container'>
 				<div class='col-sm-6 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="660" height="235" src="assets/images/studio/HORIZON/addst_01.jpg" />
+				</div>
+				
+				<div class='col-sm-6 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="660" height="235" src="assets/images/studio/HORIZON/addst_02.jpg" />
+				</div>
+				<div class='col-sm-6 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="660" height="235" src="assets/images/studio/HORIZON/addst_03.jpg" />
+				</div>
+				<div class='col-sm-6 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="660" height="235" src="assets/images/studio/HORIZON/addst_04.jpg" />
+				</div>
+
+				<div class='col-sm-6 portfolio-box portfolio-filter-horizon portfolio-item'>
+					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="660" height="235" src="assets/images/studio/HORIZON/addst_01-4.jpg" />
+				</div>
+
+
+
+
+
+
+				<div class='col-sm-6 portfolio-box portfolio-filter-horizon portfolio-item'>
 					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="660" height="235" src="assets/images/studio/HORIZON/LIPLS.jpg" />
 				</div>
+
 				<div class='col-sm-6 portfolio-box portfolio-filter-horizon portfolio-item'>
 					<img class="img-responsive img-rounded center-block" alt="Etiam vestibulum" width="660" height="235" src="assets/images/studio/HORIZON/3color.jpg" />
 				</div>

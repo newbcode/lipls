@@ -46,12 +46,166 @@
 						<li class='active'><a data-filter="*" href="#">All</a></li>
 						<li><a data-filter=".portfolio-filter-prad" href="#">PR/AD</a></li>
 						<li><a data-filter=".portfolio-filter-profile " href="#">Profile</a></li>
-						<li><a data-filter=".portfolio-filter-fashion" href="#">Fashion</a></li>
+						<li><a data-filter=".portfolio-filter-fashion" href="#">ArtBook</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class='row portfolio-boxes' id='portfolio-container'>
-				
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_01.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_01.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_02.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_02.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+
+
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_09.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_09.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_10.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_10.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_11.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_11.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_12.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_12.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_13.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_13.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_14.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_14.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_15.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_15.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_16.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_16.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_17.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_17.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+                                <div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_18.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_18.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+
+
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_03.png">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_03.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_04.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_04.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_05.png">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_05.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_06.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_06.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_07.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_07.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/addad_08.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/prad/thumbnail/saddad_08.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+
+
+
+
+
+
+
 				<div class='col-sm-4 portfolio-box portfolio-filter-prad portfolio-item'>
 					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/prad/big/hifood.jpg">
 						<div class='image-link'>
@@ -76,6 +230,45 @@
 						</div>
 					</a>
 				</div>
+
+				<div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/add_pf_01.jpg">
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img src="assets/images/portfolio/profile/thumbnail/sadd_pf_01.jpg" />
+						</div>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/add_pf_02.jpg">
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img src="assets/images/portfolio/profile/thumbnail/sadd_pf_02.jpg" />
+						</div>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/add_pf_03.jpg">
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img src="assets/images/portfolio/profile/thumbnail/sadd_pf_03.jpg" />
+						</div>
+					</a>
+				</div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
+					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/add_pf_04.jpg">
+						<div class='image-link'>
+							<i class='fa fa-search'></i>
+							<img src="assets/images/portfolio/profile/thumbnail/sadd_pf_04.jpg" />
+						</div>
+					</a>
+				</div>
+
+
+
+
+
+
 				<div class='col-sm-4 portfolio-box portfolio-filter-profile portfolio-item'>
 					<a class="venobox" data-gall="myGallery" href="assets/images/portfolio/profile/big/gag01.jpg">
 						<div class='image-link'>
@@ -204,6 +397,42 @@
                                                 </div>
                                         </a>
                                 </div>
+
+
+
+
+
+
+
+
+				<div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/add_fs_01.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/sadd_fs_01.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/add_fs_02.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/sadd_fs_02.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+				<div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
+                                        <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/add_fs_03.jpg">
+                                                <div class='image-link'>
+                                                        <i class='fa fa-search'></i>
+                                                        <img src="assets/images/portfolio/fashion/thumbnail/sadd_fs_03.jpg" />
+                                                </div>
+                                        </a>
+                                </div>
+
+
+
+
 
                                 <div class='col-sm-4 portfolio-box portfolio-filter-fashion portfolio-item'>
                                         <a class="venobox" data-gall="myGallery" href="assets/images/portfolio/fashion/big/fs01.jpg">
